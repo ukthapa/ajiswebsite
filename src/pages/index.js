@@ -16,10 +16,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-const bannerData = () => {
-	bannerTitle : 'Turn your Technological Fantasy into a Livable Reality.'
-	bannerContent : 'Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, securing communities, and enhancing the quality of life worldwide.'
-	bannerImg : 'hero-img.jpg'
-}
 
-return bannerData;
