@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import { Container, Row, Col, Image } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 
 const Banner = (props) => {
@@ -8,9 +8,8 @@ const Banner = (props) => {
 		<Container>
 			<Row>
 				<Col>
-					<h1> { props.state.bannerTitle } </h1>
-					<p> { props.state.bannerContent } </p>
-					<Image src=""/>
+					<h1> Turn your Technological Fantasy into a Livable Reality. </h1>
+					<p> Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, securing communities, and enhancing the quality of life worldwide. </p>
 				</Col>
 			</Row>
 		</Container>
