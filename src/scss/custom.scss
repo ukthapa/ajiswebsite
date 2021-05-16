@@ -1,0 +1,65 @@
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+
+$border-radius:               25rem !default;
+$border-radius-lg:            30rem !default;
+$border-radius-sm:            20rem !default;
+
+
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         1.5rem !default;
+
+$input-btn-padding-y-sm:      .3rem !default;
+$input-btn-padding-x-sm:      1.2rem !default;
+
+$input-btn-padding-y-lg:      1rem !default;
+$input-btn-padding-x-lg:      3rem !default;
+
+
+@import "~bootstrap/scss/bootstrap";
+
+
+.sociallist {
+	list-style: none;
+	padding: 0;
+	margin: 10px  0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	li {
+		margin-left: 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+
+			svg {
+				width: 22px;
+				height: 22px;
+			}
+
+			&:hover {
+				.fill-circle {
+					background-color: $gray-600;
+				}
+			}
+		}
+	}
+}
+
+
+// Helper
+
+.fill-circle {
+	border-radius: 50%;
+	background-color: $gray-900;
+	color: $white;
+}
