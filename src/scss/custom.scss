@@ -3,10 +3,27 @@ $theme-colors: (
     "danger": teal
 );
 
+$font-family-sans-serif:  'inter', sans-serif !default;
 
-$border-radius:               25rem !default;
-$border-radius-lg:            30rem !default;
-$border-radius-sm:            20rem !default;
+$font-weight-lighter:         100 !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          300 !default;
+$font-weight-bold:            600 !default;
+$font-weight-bolder:          800 !default;
+
+$headings-font-weight:        500 !default;
+
+$display1-weight:             600 !default;
+$display2-weight:             600 !default;
+$display3-weight:             600 !default;
+$display4-weight:             600 !default;
+
+$link-color:  #6610f2 !default;
+$primary:    #6610f2 !default;
+
+$btn-border-radius:            25rem !default;
+$btn-border-radius-lg:         30rem !default;
+$btn-border-radius-sm:         20rem !default;
 
 
 $input-btn-padding-y:         .5rem !default;
@@ -22,13 +39,45 @@ $input-btn-padding-x-lg:      3rem !default;
 @import "~bootstrap/scss/bootstrap";
 
 
+.navbar {
+	.nav-item {
+		margin: 0 10px;
+	}
+}
+
+
+.banner-wrapper {
+	background-color: $indigo;
+	color: $white;
+	padding: 5rem 0;
+}
+
+
+.footer-link {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 8px;
+	a {
+		padding-left: 0;
+	}
+}
+
+footer {
+	background-color: #f9f9f9;
+	.resources, .company {
+		flex: 0 1 220px;
+	}
+}
+
+
+
+
 .sociallist {
 	list-style: none;
 	padding: 0;
 	margin: 10px  0;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
 	li {
 		margin-left: 10px;
 		&:first-child {

@@ -14,9 +14,18 @@ module.exports = {
     // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+		{
+			resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Inter']
+        }
+      }
+		},
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+				start_url: '/',
         icon: "src/images/icon.png",
       },
     },
