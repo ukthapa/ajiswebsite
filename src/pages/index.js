@@ -9,7 +9,6 @@ const IndexPage = () => {
   return (
 		<Layout>
 			<Banner />
-
 		</Layout>
   )
 }
