@@ -5,35 +5,33 @@ import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 const PrimaryNav = () => {
 	return(
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home"><Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" /></Navbar.Brand>
+			<Navbar.Brand href="/"><Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" /></Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 			<Nav className="ml-auto">
-				<Nav.Link href="#home">Home</Nav.Link>
-				<Nav.Link href="#link">Link</Nav.Link>
-				<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-					<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-					<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-					<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-					<NavDropdown.Divider />
-					<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+				<NavDropdown title="Services" id="services">
+					<NavDropdown.Item href="/consultancy-for-it-ibms">Consultancy for IT &amp; IBMS</NavDropdown.Item>
+					<NavDropdown.Item href="/system-integrator-for-ict-suveillance-work">System integrator for ICT &amp; Surveillance work</NavDropdown.Item>
+					<NavDropdown.Item href="/manage-services">Manage services</NavDropdown.Item>
+					<NavDropdown.Item href="/cloud-service">Cloud service</NavDropdown.Item>
+					<NavDropdown.Item href="/software-development">Software development - IT, AI &amp; VR</NavDropdown.Item>
+					<NavDropdown.Item href="/career-tech">Career tech</NavDropdown.Item>
+				</NavDropdown>
+				<NavDropdown title="Resouces" id="resources">
+					<NavDropdown.Item href="/customer-stories">Customers stories</NavDropdown.Item>
+					<NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
+				</NavDropdown>
+				<NavDropdown title="Company" id="company">
+					<NavDropdown.Item href="/about-us">About us</NavDropdown.Item>
+					<NavDropdown.Item href="/career">Career</NavDropdown.Item>
+					<NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
 				</NavDropdown>
 			</Nav>
 			<Nav className="ml-auto">
-				<Link href="#home" className="btn btn-primary">Download</Link>
+				<Link href="/get-a-quote" className="btn btn-primary">Get a quote</Link>
 			</Nav>
 			</Navbar.Collapse>
 		</Navbar>
-		// <nav className="navbar navbar-light">
-		// 	<a className="navbar-brand" href="#">
-		// 		<Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" />
-		// 	</a>
-		// 	<ul>
-		// 		<li>Home</li>
-		// 		<li>About</li>
-		// 		<li>Contact</li>
-		// 	</ul>
-		// </nav>
 	)
 }
 
