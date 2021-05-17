@@ -4,7 +4,7 @@ import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 
 const PrimaryNav = () => {
 	return(
-		<Navbar expand="lg">
+		<Navbar expand="lg" sticky="top">
 			<Navbar.Brand to="/"><Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" /></Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
