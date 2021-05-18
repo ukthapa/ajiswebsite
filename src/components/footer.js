@@ -58,7 +58,7 @@ const Footer = () => {
 						</Col>
 						<Col md={{ order: 'first'}} className="text-center text-md-left">
 							<Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" />
-							<div className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat, varius lectus et, tempus lacus. Fusce vel orci a odio feugiat molestie ut id diam. </div>
+							<div >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat</div>
 							<Social />
 						</Col>
 					</Row>
