@@ -3,9 +3,7 @@ import PrimaryNav from "./primarynav.js"
 
 const Header = () => {
 	return (
-		<header >
-			<PrimaryNav />
-		</header>
+		<PrimaryNav />
 	)
 }
 

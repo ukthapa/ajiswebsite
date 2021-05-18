@@ -1,6 +1,5 @@
 $theme-colors: (
-    "info": tomato,
-    "danger": teal
+    "info": tomato
 );
 
 $headings-font-family:  'rubik', sans-serif !default;
@@ -40,18 +39,42 @@ $input-btn-padding-x-lg:      3rem !default;
 
 
 .navbar {
+	background-color: transparent !important;
+	padding: 0.25rem 1rem !important;
+	transition: all .3s ease-in-out;
 	.nav-item {
-		margin: 0 10px;
+		margin: 0 5px;
+		color: #fff;
+	}
+	.nav-link {
+		color: #fff !important;
+	}
+	&.sticked-menu {
+		background-color: #3e02a0 !important;
+		transition: all .3s ease-in-out;
+		// .nav-item {
+		// 	margin: 0 5px;
+		// 	// color: #1d1d1d;
+		// }
+		// .nav-link {
+		// 	color: #1d1d1d !important;
+		// }
 	}
 }
 
 
+
 .banner-wrapper {
-	background-color: $indigo;
+	background: #3e02a0;
 	color: $white;
-	padding: 5rem 0;
+	padding: 8rem 0 4rem;
 }
 
+.bannerimg {
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+}
 
 .footer-link {
 	list-style: none;
