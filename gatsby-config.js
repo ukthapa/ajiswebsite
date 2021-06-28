@@ -32,6 +32,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+		"gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -47,6 +48,20 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+		{
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./src/posts/",
+      },
+      __key: "posts",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./src/data/",
+      },
     },
   ],
 };

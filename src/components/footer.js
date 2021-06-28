@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Image, Nav } from 'react-bootstrap'
 import Social from "./social.js"
+import logo from "../images/ajis-logo.svg"
 
 const Footer = () => {
 	return (
@@ -57,8 +58,8 @@ const Footer = () => {
 							</ul>
 						</Col>
 						<Col md={{ order: 'first'}} className="text-center text-md-left">
-							<Image src="https://via.placeholder.com/200x60?text=AJIS" alt="AJIS" className="mb-2" />
-							<div >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat</div>
+							<Image src={logo} alt="AJIS" className="mb-2 primary-logo" />
+							<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat</div>
 							<Social />
 						</Col>
 					</Row>

@@ -7,14 +7,18 @@ const WhyUsSection = () => {
 	return (
 		<div className="light-blue section">
 			<Container>
-				<Row className="align-items-center">
-					<Col md={6}>
-						<h2 className="h5 text-uppercase text-danger text-underline">About Us</h2>
-						<h3 className="display-3  mb-4">Passionate team and vast network of customer service</h3>
-						<p><strong>A &amp; J Intelli System (P) Ltd</strong> was formed in 2015. Since then, the motivation to bring the world to your doorstep with the best and society need most responsive technological solutions has driven us forward. Although based in the US, where we have a strong local presence in all major cities, we operate globally. </p>
-						<p>Our passionate team and vast network of customer service, business, and technical professionals work 24/7 to provide customers and clients from several different industries all over the world with creative technological solutions, including intelligent data, IT infrastructure, Managed services, cloud services, and remote support services.</p>
+				<Row className="align-items-center ">
+					<Col md={12}>
+						<h2 className="display-3  mb-4 text-center">Why Choose Us</h2>
+						<p className="text-center">Since its inception, A &amp; J Intelli System (P) Ltd has been providing innovative solutions to
+thousands of clients and partners across the tech industry. We have built a dominant local
+presence in the US and today boast of a stellar global brand, ever since grown into an industry
+leader dictating the pace towards a future of limitless technological possibilities. Our
+commitment to personalized technology services that address specific industry needs means we
+engage clients at a personal, community, and industry needs level, designing, building, and
+managing technology solutions case by case.</p>
 					</Col>
-					<Col md={6}>
+					<Col md={12} className="text-center">
 						<Image src={aboutImg} className="aboutimg img-fluid"/>
 					</Col>
 				</Row>

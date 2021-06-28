@@ -25,7 +25,7 @@ $display2-size:               4rem !default;
 $display3-size:               3.5rem !default;
 $display4-size:               2.5rem !default;
 
-$link-color:  #6610f2 !default;
+$link-color:  #007bff !default;
 $primary:    #6610f2 !default;
 
 $btn-border-radius:            25rem !default;
@@ -76,6 +76,13 @@ h3, .h3 {
 	}
 }
 
+.navbar-brand {
+	width: 200px;
+}
+
+.primary-logo {
+	max-width: 200px;
+}
 
 .banner-wrapper {
 	background: #3e02a0;
