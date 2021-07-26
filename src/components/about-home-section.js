@@ -10,10 +10,10 @@ const AboutSection = () => {
 			<Container>
 				<Row className="align-items-center">
 					<Col lg={6} className="text-center text-lg-left">
-						<h2 className="h5 text-uppercase text-danger text-underline">About Us</h2>
-						<h3 className="display-3  mb-4">Passionate team and vast network of customer service</h3>
-						<p><strong>A &amp; J Intelli System (P) Ltd</strong> was formed in 2015. Since then, the motivation to bring the world to your doorstep with the best and society need most responsive technological solutions has driven us forward. Although based in the US, where we have a strong local presence in all major cities, we operate globally. </p>
-						<p>Our passionate team and vast network of customer service, business, and technical professionals work 24/7 to provide customers and clients from several different industries all over the world with creative technological solutions, including intelligent data, IT infrastructure, Managed services, cloud services, and remote support services.</p>
+						<h2 className="display-3 ">About Us</h2>
+						{/* <h3 className="display-3  mb-4">Passionate team and vast network of customer service</h3> */}
+						<p>A &amp; J Intelli System (P) Ltd (AJIS) is a technology solution provider that started in 2015. It set out to provide among others, dedicated IT support, software development, artificial intelligence (AI), and managed services. It has since expanded and today pioneers several innovative solutions to <strong>real-life challenges</strong> affecting businesses, organizations, and communities worldwide.</p>
+						<p>AJIS serves different domains, including citizen safety, solid-waste management, and traffic solutions, and deploys solutions across multiple smart cities worldwide. A motivated team of professionals and experts runs the company and serves customers across the public and private sectors. AJIS’s is brand is its dedication to innovations addressing <strong>real-life challenges</strong>.</p>
 					</Col>
 					<Col lg={6}>
 						<Image src={aboutImg} className="aboutimg img-fluid"/>

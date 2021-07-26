@@ -9,23 +9,23 @@ import Clients from "../components/clients-home-section"
 // import SimpleSlider from "../components/simple-swiper-slider"
 // markup
 const IndexPage = (props) => {
-	const swiperData = {
-		slides: [
-			{
-				img : 'chat.png',
-				title : 'Direct contact'
-			},
-			{
-				img : 'target.png',
-				title : 'Target'
-			},
-			{
-				img : 'customer-service.png',
-				title : 'Customer service'
-			}
-		],
-		spaceBetween: 20
-	}
+	// const swiperData = {
+	// 	slides: [
+	// 		{
+	// 			img : 'chat.png',
+	// 			title : 'Direct contact'
+	// 		},
+	// 		{
+	// 			img : 'target.png',
+	// 			title : 'Target'
+	// 		},
+	// 		{
+	// 			img : 'customer-service.png',
+	// 			title : 'Customer service'
+	// 		}
+	// 	],
+	// 	spaceBetween: 20
+	// }
   return (
 		<Layout>
 			<Banner />
