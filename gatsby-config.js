@@ -57,11 +57,11 @@ module.exports = {
     //   },
     //   __key: "posts",
     // },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: "./src/data/",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: "./src/data/",
+    //   },
+    // },
   ],
 };
