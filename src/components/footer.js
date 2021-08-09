@@ -5,7 +5,7 @@ import logo from "../images/ajis-logo.svg"
 
 const Footer = () => {
 	return (
-		<footer>
+		<footer class="bg-dark">
 			<div className="footer pt-5 pb-3">
 				<Container fluid="md">
 					<Row>
@@ -53,11 +53,11 @@ const Footer = () => {
 									<Nav.Link href="/career">Career</Nav.Link>
 								</li>
 								<li>
-									<Nav.Link href="/contact">Contact us</Nav.Link>
+									<Nav.Link href="/contact-us">Contact us</Nav.Link>
 								</li>
 							</ul>
 						</Col>
-						<Col md={{ order: 'first'}} className="text-center text-md-left">
+						<Col md={{ order: 'first'}} className="text-center text-md-start">
 							<Image src={logo} alt="AJIS" className="mb-2 primary-logo" />
 							<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat</div>
 							<Social />
@@ -66,8 +66,8 @@ const Footer = () => {
 					<Row>
 						<Col>
 						<hr className="mt-4 mb-4"/>
-						<div className="d-md-flex justify-content-center justify-content-md-between align-items-center small text-black-50 text-center text-md-left">
-							<p className="mb-0 mr-md-3 text-center text-md-left">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>
+						<div className="d-md-flex justify-content-center justify-content-md-between align-items-center small text-black-50 text-center text-md-start">
+							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>
 							<Nav className="justify-content-center">
 								<Nav.Item>
 									<Nav.Link href="/privacy-policy" className="p-2">Privacy Policy</Nav.Link>

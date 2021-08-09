@@ -18,7 +18,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Rubik Condensed:100, 300, 500, 600, 800']
+          families: ['Manrope Condensed:100, 300, 500, 600, 800']
         }
       }
 		},

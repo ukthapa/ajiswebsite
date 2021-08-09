@@ -26,7 +26,7 @@ const PrimaryNav = () => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="navbarscroll" />
 				<Navbar.Collapse id="navbarscroll">
-				<Nav className="ml-auto" navbarscroll>
+				<Nav className="ms-auto" navbarscroll>
 					<NavDropdown title="Services" id="services">
 						<NavDropdown.Item href="/consultancy-for-it-ibms">Consultancy for IT &amp; IBMS</NavDropdown.Item>
 						<NavDropdown.Item href="/system-integrator-for-ict-suveillance-work">System integrator for ICT &amp; Surveillance work</NavDropdown.Item>
@@ -42,11 +42,11 @@ const PrimaryNav = () => {
 					<NavDropdown title="Company" id="company">
 						<NavDropdown.Item href="/about-us">About us</NavDropdown.Item>
 						<NavDropdown.Item href="/career">Career</NavDropdown.Item>
-						<NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+						<NavDropdown.Item href="/contact-us">Contact Us</NavDropdown.Item>
 					</NavDropdown>
 				</Nav>
-				<Nav className="ml-auto">
-					<Link href="/get-a-quote" className="btn btn-danger">Get a quote</Link>
+				<Nav className="ms-auto">
+					<Link href="/get-a-quote" className="btn btn-primary">Get a quote</Link>
 				</Nav>
 				</Navbar.Collapse>
 			</Navbar>

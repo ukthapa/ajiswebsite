@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col } from "react-bootstrap"
 
-const IndexPage = (props) => {
+const AboutPage = (props) => {
 
   return (
 		<Layout>
@@ -42,5 +42,5 @@ pioneering technology and managed IT services and solutions to real-life challen
   )
 }
 
-export default IndexPage
+export default AboutPage
 

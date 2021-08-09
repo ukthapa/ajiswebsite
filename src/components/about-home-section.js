@@ -9,7 +9,7 @@ const AboutSection = () => {
 		<div className="light-blue section">
 			<Container>
 				<Row className="align-items-center">
-					<Col lg={6} className="text-center text-lg-left">
+					<Col lg={6} className="text-center text-lg-start">
 						<h2 className="display-3 ">About Us</h2>
 						{/* <h3 className="display-3  mb-4">Passionate team and vast network of customer service</h3> */}
 						<p>A &amp; J Intelli System (P) Ltd (AJIS) is a technology solution provider that started in 2015. It set out to provide among others, dedicated IT support, software development, artificial intelligence (AI), and managed services. It has since expanded and today pioneers several innovative solutions to <strong>real-life challenges</strong> affecting businesses, organizations, and communities worldwide.</p>

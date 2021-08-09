@@ -1,32 +1,65 @@
-$theme-colors: (
-    "info": tomato
-);
 
 $enable-responsive-font-sizes: true !default;
+$enable-negative-margins:     true !default;
 
-$headings-font-family:  'rubik', sans-serif !default;
+$headings-font-family:  'Manrope', sans-serif !default;
 
-$font-weight-lighter:         100 !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          300 !default;
-$font-weight-bold:            600 !default;
-$font-weight-bolder:          800 !default;
+:root{
+--bs-blue: #3f78e0;
+--bs-purple: #747ed1;
+--bs-violet: #a07cc5;
+--bs-pink: #d16b86;
+--bs-red: #e2626b;
+--bs-orange: #f78b77;
+--bs-yellow: #fab758;
+--bs-green: #6bbea3;
+--bs-leaf: #7cb798;
+--bs-aqua: #54a8c7;
+--bs-navy: #343f52;
+--bs-ash: #9499a3;
+--bs-white: #fff;
+--bs-light: #fefefe;
+--bs-gray: #f6f7f9;
+--bs-dark: #262b32;
+--bs-primary: #3f78e0;
+--bs-secondary: #aab0bc;
+--bs-success: #6bbea3;
+--bs-info: #54a8c7;
+--bs-warning: #fab758;
+--bs-danger: #e2626b;
+--bs-font-sans-serif: "Manrope",sans-serif;
+--bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+--bs-gradient: linear-gradient(to right, #fab758, #f78b77, #e2626b);
+}
 
-$headings-font-weight:        500 !default;
+$enable-gradients:            true !default;
 
-$display1-weight:             600 !default;
-$display2-weight:             600 !default;
-$display3-weight:             600 !default;
-$display4-weight:             600 !default;
+// $font-weight-lighter:         100 !default;
+// $font-weight-light:           300 !default;
+// $font-weight-normal:          300 !default;
+// $font-weight-bold:            600 !default;
+// $font-weight-bolder:          800 !default;
+
+// $headings-font-weight:        500 !default;
+
+// $display1-weight:             600 !default;
+// $display2-weight:             600 !default;
+// $display3-weight:             600 !default;
+// $display4-weight:             600 !default;
 
 
-$display1-size:               4.5rem !default;
-$display2-size:               4rem !default;
-$display3-size:               3.5rem !default;
-$display4-size:               2.5rem !default;
+// $display1-size:               4.5rem !default;
+// $display2-size:               4rem !default;
+// $display3-size:               3.5rem !default;
+// $display4-size:               2.5rem !default;
 
-$link-color:  #007bff !default;
-$primary:    #6610f2 !default;
+// $link-color:  #007bff !default;
+// $primary:    #6610f2 !default;
+
+.display-2 {
+	font-size: calc(1.375rem + 1.5vw)!important;
+	font-weight: 700 !important;
+}
 
 $btn-border-radius:            25rem !default;
 $btn-border-radius-lg:         30rem !default;
@@ -45,6 +78,13 @@ $input-btn-padding-x-lg:      3rem !default;
 
 @import "~bootstrap/scss/bootstrap";
 
+body {
+	color: #60697b;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	color: var(--bs-navy);
+}
 
 h1, h2, .h1, .h2 {
 	font-weight: $font-weight-bolder;
@@ -57,18 +97,18 @@ h3, .h3 {
 
 
 .navbar {
-	background-color: transparent !important;
+	background: transparent;
 	padding: 0.25rem 1rem !important;
 	transition: all .3s ease-in-out;
 	.nav-item {
 		margin: 0 5px;
-		color: #fff;
+		// color: #fff;
 	}
 	.nav-link {
-		color: #fff !important;
+		// color: #fff !important;
 	}
 	&.sticked-menu {
-		background-color: rgba(62,2,160,.8) !important;
+		background: #eef6ff;
 		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
@@ -85,9 +125,12 @@ h3, .h3 {
 }
 
 .banner-wrapper {
-	background: #3e02a0;
-	color: $white;
 	padding: 10rem 0 4rem;
+}
+
+.bg-gradient-primary {
+	background: #eef6ff;
+    // background: linear-gradient(180deg,#eef6ff,rgba(255,255,255,0) 100%)!important;
 }
 
 .bannerimg {
@@ -122,6 +165,7 @@ h3, .h3 {
 
 footer {
 	background-color: #f9f9f9;
+	color: #fff;
 	.resources, .company {
 		flex: 0 1 220px;
 	}
