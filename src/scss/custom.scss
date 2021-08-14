@@ -102,10 +102,6 @@ h3, .h3 {
 	transition: all .3s ease-in-out;
 	.nav-item {
 		margin: 0 5px;
-		// color: #fff;
-	}
-	.nav-link {
-		// color: #fff !important;
 	}
 	&.sticked-menu {
 		background: #eef6ff;
@@ -160,19 +156,33 @@ h3, .h3 {
 	margin: 0 0 8px;
 	a {
 		padding-left: 0;
+		&.nav-link {
+			color: $blue-400;
+		}
+	}
+}
+
+.nav-item {
+	a {
+		color: $blue-400;
 	}
 }
 
 footer {
 	background-color: #f9f9f9;
-	color: #fff;
+	color: $gray-100 !important;
 	.resources, .company {
 		flex: 0 1 220px;
 	}
+
+	p{
+		 color: $gray-200;
+	}
+
+	h5 {
+		color: $gray-300;
+	}
 }
-
-
-
 
 .sociallist {
 	list-style: none;
