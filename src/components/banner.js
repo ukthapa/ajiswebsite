@@ -8,19 +8,19 @@ const Banner = () => {
 	return (
 		<>
 			<div className="banner-wrapper bg-gradient-primary">
-				<Container className="pt-10 pb-15 pt-md-14 pb-md-20">
+				<Container className="pt-5 pb-10 pb-md-20">
 					<Row>
 						<Col>
 							<div className="text-center">
-								<h1 className="mb-4 display-2">Turn your Technological Fantasy <span className="d-lg-block">into a Livable Reality.</span></h1>
-								<p className="m-auto lead text-secondary">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
+								<h1 className="mb-4 display-2" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease">Turn your Technological Fantasy <span className="d-lg-block">into a Livable Reality.</span></h1>
+								<p className="m-auto lead text-secondary" data-sal="slide-down" data-sal-delay="800" data-sal-easing="ease">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
 							</div>
 						</Col>
 					</Row>
 				</Container>
 			</div>
-			<div className="text-center mt-md-n20">
-				<Image src={bannerImg} className="bannerimg mt-4" />
+			<div className="text-center mt-md-n20 mb-md-5">
+				<Image src={bannerImg} className="bannerimg mt-4" data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease"/>
 			</div>
 		</>
 	)

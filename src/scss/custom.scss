@@ -34,6 +34,21 @@ $headings-font-family:  'Manrope', sans-serif !default;
 
 $enable-gradients:            true !default;
 
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 6,
+  20: $spacer * 12,
+  25: $spacer * 18,
+) !default;
+
 // $font-weight-lighter:         100 !default;
 // $font-weight-light:           300 !default;
 // $font-weight-normal:          300 !default;
