@@ -13,7 +13,7 @@ const Banner = () => {
 						<Col>
 							<div className="text-center">
 								<h1 className="mb-4 display-2">Turn your Technological Fantasy <span className="d-lg-block">into a Livable Reality.</span></h1>
-								<p className="m-auto w-75 lead text-secondary">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
+								<p className="m-auto lead text-secondary">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
 							</div>
 						</Col>
 					</Row>
