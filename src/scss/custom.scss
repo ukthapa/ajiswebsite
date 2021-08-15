@@ -94,11 +94,11 @@ $input-btn-padding-x-lg:      3rem !default;
 @import "~bootstrap/scss/bootstrap";
 
 body {
-	color: #60697b;
+	color: var(--bs-navy) !important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	color: var(--bs-navy);
+	color: var(--bs-dark) !important;
 }
 
 h1, h2, .h1, .h2 {

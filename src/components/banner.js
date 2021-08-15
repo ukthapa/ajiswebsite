@@ -8,7 +8,7 @@ const Banner = () => {
 	return (
 		<>
 			<div className="banner-wrapper bg-gradient-primary">
-				<Container className="pt-5 pb-10 pb-md-20">
+				<Container className="pt-0 pb-5 pb-md-20">
 					<Row>
 						<Col>
 							<div className="text-center">
@@ -19,8 +19,8 @@ const Banner = () => {
 					</Row>
 				</Container>
 			</div>
-			<div className="text-center mt-md-n20 mb-md-5">
-				<Image src={bannerImg} className="bannerimg mt-4" data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease"/>
+			<div className="text-center mt-n10 mt-md-n20 mb-md-5">
+				<Image src={bannerImg} className="bannerimg mt-4" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease"/>
 			</div>
 		</>
 	)

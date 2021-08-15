@@ -5,7 +5,7 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 
 const ServicesSection = () => {
 	return (
-		<div className="section white-bg">
+		<div className="light-blue section">
 			<Container>
 				<Row className="align-items-center mb-5">
 					<Col className="text-center">
