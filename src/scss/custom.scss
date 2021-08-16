@@ -139,6 +139,10 @@ h3, .h3 {
 	padding: 10rem 0 4rem;
 }
 
+.banner-wrapper-small {
+	padding: 8rem 0 2rem;
+}
+
 .bg-gradient-primary {
 	background: #eef6ff;
     // background: linear-gradient(180deg,#eef6ff,rgba(255,255,255,0) 100%)!important;
@@ -153,15 +157,21 @@ h3, .h3 {
 
 .light-blue {
 	background-color: #f9fafe;
+}
+
+
+
+.white-bg, .angled {
 	clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
 }
 
-.white-bg {
-	clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
+.angled-inverse {
+	clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px calc(100% - 5vw));
 }
+
 
 .section {
-	padding: 5rem 0 8rem;
+	padding: 3rem 0 5rem;
 }
 
 
@@ -239,3 +249,4 @@ footer {
 	background-color: $gray-900;
 	color: $white;
 }
+
