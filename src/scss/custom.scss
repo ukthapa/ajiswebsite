@@ -174,9 +174,11 @@ h3, .h3 {
 	padding: 3rem 0 5rem;
 }
 
-.card {
+a.card {
 	padding: 2rem 2rem;
 	margin-bottom: 2rem;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
 	&.shadow-sm {
 		box-shadow: 0 .25rem 1.75rem rgba(30,34,40,.07)!important;
 		border: 0;
@@ -184,15 +186,27 @@ h3, .h3 {
 	svg {
 		width: 60px;
 	}
-	&-body {
+	.card-body {
 		.h5 {
 			font-weight: 600;
 			height: 40px;
 		}
 		p {
 			font-size: 15px;
-			height: 270px;
+			color: var(--bs-navy);
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
+
+	}
+	&:hover {
+		background-color: #e0e9fa!important;
+		text-decoration: none;
+		position: relative;
+		z-index: 2;
+		transform: translateY(-8px);
+		transition: all 1s ease-in-out;
 	}
 }
 
