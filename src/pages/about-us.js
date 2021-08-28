@@ -7,7 +7,7 @@ const AboutPage = (props) => {
 
   return (
 		<Layout>
-			<section class="banner-wrapper-small bg-gradient-primary angled-inverse section">
+			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
 					<Row>
 						<Col>
@@ -18,7 +18,7 @@ const AboutPage = (props) => {
 					</Row>
 				</Container>
 			</section>
-			<section class="wrapper mb-5 mt-5">
+			<section className="wrapper mb-5 mt-5">
 				<Container>
 					<Row>
 						<Col>

@@ -5,7 +5,7 @@ import logo from "../images/ajis-logo.svg"
 
 const Footer = () => {
 	return (
-		<footer class="bg-dark">
+		<footer className="bg-dark">
 			<div className="footer pt-5 pb-3">
 				<Container fluid="md">
 					<Row>

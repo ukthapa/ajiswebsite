@@ -7,7 +7,7 @@ const ContactPage = (props) => {
 
   return (
 		<Layout>
-			<section class="banner-wrapper-small bg-gradient-primary angled-inverse section">
+			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
 					<Row>
 						<Col>

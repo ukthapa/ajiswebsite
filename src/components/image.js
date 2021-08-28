@@ -15,7 +15,7 @@ const Image = ({ src, ...rest }) => {
             extension
             publicURL
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid(maxWidth: 600, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -25,19 +25,16 @@ const Image = ({ src, ...rest }) => {
     }
   `);
 
-  const match = useMemo(
-    () => data.images.edges.find(({ node }) => src === node.relativePath),
-    [data, src]
-  );
+
+  const match = useMemo(() => data.images.edges.find(({ node }) => src === node.relativePath), [data, src]);
 
   if (!match) return null;
-
   const { node: { childImageSharp, publicURL, extension } = {} } = match;
+
 
   if (extension === "svg" || !childImageSharp) {
     return <img src={publicURL} {...rest} />;
   }
-
   return <Img fluid={childImageSharp.fluid} {...rest} style="" />;
 };
 

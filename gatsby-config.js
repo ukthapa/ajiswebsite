@@ -64,7 +64,7 @@ module.exports = {
 					enterEventName: 'sal:in', // Enter event name
 					exitEventName: 'sal:out', // Exit event name
 			}
-		}
+		},
 		// {
     //   resolve: "gatsby-source-filesystem",
     //   options: {
@@ -73,11 +73,11 @@ module.exports = {
     //   },
     //   __key: "posts",
     // },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: "./src/data/",
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./src/data/",
+      },
+    }
   ],
 };
