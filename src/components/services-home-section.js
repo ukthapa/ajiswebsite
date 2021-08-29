@@ -10,7 +10,7 @@ const ServicesSection = () => {
 			<Container>
 				<Row className="align-items-center mt-5 mb-5">
 					<Col className="text-center">
-						<h2 className="h5 text-uppercase text-muted " data-sal="slide-down" data-sal-delay="150" data-sal-easing="ease">What We Do?</h2>
+						<h2 className="h5 text-uppercase text-blue fw-normal" data-sal="slide-down" data-sal-delay="150" data-sal-easing="ease">What We Do?</h2>
 					    <h3 className="h1" data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease">The service we offer is <span className="d-lg-block">specifically designed to meet your needs.</span></h3>
 					</Col>
 				</Row>

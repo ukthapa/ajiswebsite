@@ -2,10 +2,32 @@
 $enable-responsive-font-sizes: true !default;
 $enable-negative-margins:     true !default;
 
-$headings-font-family:  'Manrope', sans-serif !default;
+$font-family-sans-serif:
+  // custom
+  Poppins,
+  // Android
+  Roboto,
+  // Cross-platform generic font family (default user interface font)
+  system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Windows
+  "Segoe UI",
+  // Basic web fallback
+  "Helvetica Neue", Arial,
+  // Linux
+  "Noto Sans",
+  "Liberation Sans",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$headings-font-family:  $font-family-sans-serif !default;
+
 
 :root{
---bs-blue: #3f78e0;
+--bs-blue: #3881ce;
 --bs-purple: #747ed1;
 --bs-violet: #a07cc5;
 --bs-pink: #d16b86;
@@ -15,7 +37,7 @@ $headings-font-family:  'Manrope', sans-serif !default;
 --bs-green: #6bbea3;
 --bs-leaf: #7cb798;
 --bs-aqua: #54a8c7;
---bs-navy: #343f52;
+--bs-navy: #636f85;
 --bs-ash: #9499a3;
 --bs-white: #fff;
 --bs-light: #fefefe;
@@ -27,7 +49,7 @@ $headings-font-family:  'Manrope', sans-serif !default;
 --bs-info: #54a8c7;
 --bs-warning: #fab758;
 --bs-danger: #e2626b;
---bs-font-sans-serif: "Manrope",sans-serif;
+--bs-font-sans-serif: $font-family-sans-serif;
 --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 --bs-gradient: linear-gradient(to right, #fab758, #f78b77, #e2626b);
 }
@@ -65,17 +87,19 @@ $gutters: (
 );
 
 // $font-weight-lighter:         100 !default;
-// $font-weight-light:           300 !default;
+// $font-weight-light:           200 !default;
 // $font-weight-normal:          300 !default;
-// $font-weight-bold:            600 !default;
+// $font-weight-regular:         400 !default;
+// $font-weight-semi-bold:       600 !default;
+// $font-weight-bold:            700 !default;
 // $font-weight-bolder:          800 !default;
 
-// $headings-font-weight:        500 !default;
+$headings-font-weight:        700 !default;
 
-// $display1-weight:             600 !default;
-// $display2-weight:             600 !default;
-// $display3-weight:             600 !default;
-// $display4-weight:             600 !default;
+// $display1-weight:             700 !default;
+// $display2-weight:             700 !default;
+// $display3-weight:             700 !default;
+// $display4-weight:             700 !default;
 
 
 // $display1-size:               4.5rem !default;
@@ -109,22 +133,34 @@ $input-btn-padding-x-lg:      3rem !default;
 @import "~bootstrap/scss/bootstrap";
 
 body {
-	color: var(--bs-navy) !important;
+	color: var(--bs-navy);
+	font-family: $font-family-sans-serif;
+	font-weight: $font-weight-normal;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	color: var(--bs-dark) !important;
+	color: var(--bs-dark);
 }
 
 h1, h2, .h1, .h2 {
-	font-weight: $font-weight-bolder;
+	font-weight: $headings-font-weight !important;
 }
 
 h3, .h3 {
-	font-weight: $font-weight-bold;
+	font-weight: $headings-font-weight !important;
 }
 
+p {
+	line-height: 1.65;
+}
 
+.text-muted {
+	color: var(--bs-secondary) !important;
+}
+
+.text-blue {
+	color: var(--bs-blue) !important;
+}
 
 .navbar {
 	background: transparent;
@@ -292,6 +328,20 @@ footer {
 	}
 }
 
+
+.shape {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+    transform: translate3d(0px, 0px, 0px) translate(-50%, -50%);
+    z-index: 0;
+}
+
+.bg-pale-red {
+	background-color: #fae6e7!important;
+}
 
 // Helper
 

@@ -18,7 +18,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Manrope Condensed:100, 300, 500, 600, 800']
+          families: ['Poppins Condensed:200, 300, 400, 600, 700, 800']
         }
       }
 		},
