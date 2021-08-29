@@ -59,7 +59,7 @@ const Footer = () => {
 						</Col>
 						<Col md={{ order: 'first'}} className="text-center text-md-start">
 							<Image src={logo} alt="AJIS" className="mb-2 primary-logo" />
-							<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante elit. Integer non enim placerat</div>
+							<div>AJIS aimed to address these evolving needs, offer managed services and generally innovate solutions to real-life challenges.</div>
 							<Social />
 						</Col>
 					</Row>

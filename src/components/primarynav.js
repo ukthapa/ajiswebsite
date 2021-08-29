@@ -46,7 +46,7 @@ const PrimaryNav = () => {
 					</NavDropdown>
 				</Nav>
 				<Nav className="ms-auto">
-					<Link href="/get-a-quote" className="btn btn-primary">Get a quote</Link>
+					<Link href="/contact-us" className="btn btn-primary">Get a quote</Link>
 				</Nav>
 				</Navbar.Collapse>
 			</Navbar>
