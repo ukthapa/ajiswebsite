@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Layout from "../layout/base"
+import SEO from "../components/seo"
 import Banner from "../components/banner"
 import AboutUs from "../components/about-home-section"
 import Services from "../components/services-home-section"
@@ -28,6 +29,8 @@ const IndexPage = (props) => {
 	// }
   return (
 		<Layout>
+			<SEO
+			  title="Testing" />
 			<Banner />
 			<AboutUs />
 			<Services />

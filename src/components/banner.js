@@ -20,7 +20,7 @@ const Banner = () => {
 				</Container>
 			</div>
 			<div className="text-center mt-n10 mt-md-n20 mb-md-5">
-				<Image src={bannerImg} className="bannerimg mt-4" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease"/>
+				<Image src={bannerImg} className="bannerimg mt-4" data-sal="slide-up" data-sal-delay="10" data-sal-easing="ease"/>
 			</div>
 		</>
 	)

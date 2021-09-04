@@ -10,7 +10,7 @@ const PrimaryNav = () => {
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 		window.addEventListener("scroll", () =>
-			setSmall(window.pageYOffset > 20)
+			setSmall(window.pageYOffset > 100)
 		);
 		}
 	}, []);
@@ -18,7 +18,7 @@ const PrimaryNav = () => {
 
 	return(
 		<header>
-			<Navbar  expand="lg" className={`fixed-top ${
+			<Navbar  expand="lg" className={`${
 			small ? "sticked-menu shadow-sm" : ""
 		  }`}>
 				<Navbar.Brand href="/">
@@ -26,7 +26,7 @@ const PrimaryNav = () => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="navbarscroll" />
 				<Navbar.Collapse id="navbarscroll">
-				<Nav className="ms-auto" navbarscroll>
+				<Nav className="ms-auto" navbarscroll="true">
 					<NavDropdown title="Services" id="services">
 						<NavDropdown.Item href="/consultancy-for-it-ibms">Consultancy for IT &amp; IBMS</NavDropdown.Item>
 						<NavDropdown.Item href="/system-integrator-for-ict-suveillance-work">System integrator for ICT &amp; Surveillance work</NavDropdown.Item>
@@ -46,7 +46,7 @@ const PrimaryNav = () => {
 					</NavDropdown>
 				</Nav>
 				<Nav className="ms-auto">
-					<Link href="/contact-us" className="btn btn-primary">Get a quote</Link>
+					<Nav.Link href="/contact-us" className="btn btn-primary">Get a quote</Nav.Link>
 				</Nav>
 				</Navbar.Collapse>
 			</Navbar>
