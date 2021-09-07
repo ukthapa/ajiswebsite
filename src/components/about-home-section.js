@@ -19,7 +19,7 @@ const AboutSection = () => {
 						<p data-sal="slide-down" data-sal-delay="400" data-sal-easing="ease">AJIS serves different domains, including citizen safety, solid-waste management, and traffic solutions, and deploys solutions across multiple smart cities worldwide. A motivated team of professionals and experts runs the company and serves customers across the public and private sectors. AJIS’s is brand is its dedication to innovations addressing <strong>real-life challenges</strong>.</p>
 					</Col>
 					<Col lg={6} className="position-relative">
-						<div class="d-block shape bg-pale-red rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"> </div>
+						<div className="d-block shape bg-pale-red rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"> </div>
 						<Row className="align-items-center position-relative">
 							<Col xs={6} className="text-right">
 								<Image src={imgOne} className="aboutimg img-fluid mt-10 rounded shadow-sm"  data-sal="fade-in" data-sal-delay="200" data-sal-easing="ease"/>

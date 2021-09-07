@@ -1,7 +1,8 @@
 module.exports = {
+	pathPrefix: `/staticweb/public`,
   siteMetadata: {
     title: "ajiswebsite",
-		siteUrl: "https://ajiswebsite.com"
+		siteUrl: "https://ajissolutions.com"
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -25,7 +26,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-				start_url: '/',
+				start_url: '/staticweb/public',
         icon: "src/images/icon.png",
       },
     },

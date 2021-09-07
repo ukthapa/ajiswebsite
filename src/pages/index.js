@@ -30,7 +30,9 @@ const IndexPage = (props) => {
   return (
 		<Layout>
 			<SEO
-			  title="Testing" />
+			  title="Testing"
+			  description=""
+			/>
 			<Banner />
 			<AboutUs />
 			<Services />

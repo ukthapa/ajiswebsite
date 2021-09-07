@@ -35,7 +35,7 @@ const Image = ({ src, ...rest }) => {
   if (extension === "svg" || !childImageSharp) {
     return <img src={publicURL} {...rest} />;
   }
-  return <Img fluid={childImageSharp.fluid} {...rest} style="" />;
+  return <Img fluid={childImageSharp.fluid} {...rest} />;
 };
 
 Image.propTypes = {

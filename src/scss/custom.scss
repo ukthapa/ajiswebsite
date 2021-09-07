@@ -224,11 +224,6 @@ blockquote {
 
 @include media-breakpoint-up(md) {
 	.navbar-nav {
-		.dropdown-toggle {
-			&:hover {
-
-			}
-		}
 		.dropdown-menu {
 			padding: 30px  !important;
 			border-color: #f9f9f9 !important;

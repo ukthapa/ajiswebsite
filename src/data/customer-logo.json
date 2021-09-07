@@ -1,26 +1,32 @@
 [
 	{
 		"companyname": "logo 1",
-		"companylogo": "customers-logo/logo.png"
+		"companylogo": "customers-logo/logo.png",
+		"alt": "Logo 1"
 	},
 	{
 		"companyname": "logo 2",
-		"companylogo": "customers-logo/logo2.png"
+		"companylogo": "customers-logo/logo2.png",
+		"alt": "Logo 2"
 	},
 	{
 		"companyname": "logo 3",
-		"companylogo": "customers-logo/logo3.png"
+		"companylogo": "customers-logo/logo3.png",
+		"alt": "Logo 3"
 	},
 	{
 		"companyname": "logo 1",
-		"companylogo": "customers-logo/logo.png"
+		"companylogo": "customers-logo/logo.png",
+		"alt": "Logo 1"
 	},
 	{
 		"companyname": "logo 2",
-		"companylogo": "customers-logo/logo2.png"
+		"companylogo": "customers-logo/logo2.png",
+		"alt": "Logo 1"
 	},
 	{
 		"companyname": "logo 3",
-		"companylogo": "customers-logo/logo3.png"
+		"companylogo": "customers-logo/logo3.png",
+		"alt": "Logo 1"
 	}
 ]

@@ -1,5 +1,5 @@
 import React, { useEffect, useState }  from "react"
-import { Link } from "gatsby"
+import { withPrefix } from "gatsby"
 import logo from "../images/ajis-logo.svg"
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 
@@ -13,6 +13,44 @@ const PrimaryNav = () => {
 			setSmall(window.pageYOffset > 100)
 		);
 		}
+
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth > 992) {
+				console.log("I am in");
+
+				document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
+					console.log("I am in FUNCTION");
+
+					everyitem.addEventListener('mouseover', function(e){
+
+						let el_link = this.querySelector('.dropdown-toggle');
+
+						if(el_link != null){
+							let nextEl = el_link.nextElementSibling;
+							el_link.classList.add('show');
+							nextEl.classList.add('show');
+						}
+
+					});
+					everyitem.addEventListener('mouseleave', function(e){
+						let el_link = this.querySelector('.dropdown-toggle');
+
+						if(el_link != null){
+							let nextEl = el_link.nextElementSibling;
+							el_link.classList.remove('show');
+							nextEl.classList.remove('show');
+						}
+
+
+					})
+				});
+
+			}
+			// end if innerWidth
+			});
+			// DOMContentLoaded  end
+
 	}, []);
 
 

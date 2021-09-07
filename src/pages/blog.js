@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../layout/base"
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -19,13 +19,14 @@ export default function Blog({ data }) {
 					</Row>
 				</Container>
 			</section>
-			<div>
-				{data.allMdx.nodes.map(({ excerpt, frontmatter }) => (
-					<article>
-						<h2>{frontmatter.title}</h2>
-						<small>{frontmatter.date}</small>
+			<div className="row">
+				{data.allMdx.nodes.map(({ excerpt, frontmatter, slug,  timeToRead}) => (
+					<Link to = {`/${slug}`} className="col-4">
+						<h2>{frontmatter.title}</h2><br/>
+						<small>{frontmatter.date}</small><br/>
+						<small>{timeToRead}</small><br/>
 						<p>{excerpt}</p>
-					</article>
+					</Link>
 				))}
 			</div>
 		</Layout>
@@ -41,9 +42,11 @@ query SITE_INDEX_QUERY {
 		nodes {
 			id
 			excerpt(pruneLength: 250)
+			slug
+        	timeToRead
 			frontmatter {
 				title
-				date
+				date(formatString: "MMMM DD, YYYY")
 			}
 		}
 	}

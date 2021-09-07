@@ -29,7 +29,7 @@ const ContactPage = (props) => {
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.098834854936!2d77.04166351507843!3d28.44643688249161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1842a5696379%3A0xc997ea64a2acb50a!2s56%2C%20Institutional%20Area%2C%20Prem%20Puri%2C%20Sector%2032%2C%20Gurugram%2C%20Haryana%20122018!5e0!3m2!1sen!2sin!4v1630233345456!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy"></iframe>
 								</Col>
 								<Col md={5}>
-									<div class="d-flex mb-4">
+									<div className="d-flex mb-4">
 										<span className="d-block icon-lg mr-4"><GeoAlt/></span>
 										<div>
 											<h4>Address</h4>
@@ -42,7 +42,7 @@ const ContactPage = (props) => {
 										</div>
 									</div>
 
-									<div class="d-flex mb-4">
+									<div className="d-flex mb-4">
 										<span className="d-block icon-lg mr-4"><Telephone/></span>
 										<div>
 											<h4>Phone</h4>
@@ -51,7 +51,7 @@ const ContactPage = (props) => {
 										</div>
 									</div>
 
-									<div class="d-flex">
+									<div className="d-flex">
 										<span className="d-block icon-lg mr-4"><Envelope/></span>
 										<div>
 											<h4>Email</h4>
