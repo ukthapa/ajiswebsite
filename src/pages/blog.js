@@ -20,7 +20,7 @@ export default function Blog({ data }) {
 				</Container>
 			</section>
 			<div className="row">
-				{data.allMdx.nodes.map(({ excerpt, frontmatter, slug,  timeToRead}) => (
+				{data.allMdx.nodes.map(({ excerpt, frontmatter, slug, timeToRead}) => (
 					<Link to = {`/${slug}`} className="col-4">
 						<h2>{frontmatter.title}</h2><br/>
 						<small>{frontmatter.date}</small><br/>
