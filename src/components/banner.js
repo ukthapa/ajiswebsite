@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import bannerImg from "../images/main-illustration.svg"
+import bannerImg from "../images/ajis-hero.svg"
 import { Container, Row, Col, Image} from "react-bootstrap"
 
 
