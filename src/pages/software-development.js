@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
+import introImg from "../images/software-developer.svg"
 import aboutImg from "../images/about.jpg"
 
 const AboutPage = (props) => {
@@ -11,12 +12,15 @@ const AboutPage = (props) => {
 		<Layout>
 			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
-					<Row>
-						<Col>
-							<div className="pt-5 mt-5 pb-5 mb-5">
+					<Row className="pt-md-5 mt-md-5 pb-3 pb-md-5">
+						<Col md={6}>
+							<div className="pt-5 mt-2 mt-md-5 pb-5 mb-5">
 								<h1 className=" display-2">Software development - IT, AI &amp; VR</h1>
 								<p className="lead">Company amied to address the evolving needs, offer managed services and generally innovate solutions to real-life challenges</p>
 							</div>
+						</Col>
+						<Col md={6}>
+							<Image src={introImg} className="img-fluid"/>
 						</Col>
 					</Row>
 				</Container>
@@ -24,36 +28,29 @@ const AboutPage = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 					<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6}  data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease">
-							<h2>Who Are We?</h2>
-							<p className="lead">A &amp; J Intelli System (P) Ltd (AJIS) is a technology solution provider that started in 2015. This was around the time when new technologies were emerging, as were new, complex, and dynamic
-	security threats. Customer demands were also changing, and there was a need for dedicated IT support. Indeed, the mismatch between technology, organizational needs, and customer
-	experience threatened the industry then. AJIS aimed to address these evolving needs, offer managed services and generally innovate solutions to real-life challenges.</p>
+						<Col md={6}  data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
+							<p className="lead">AJIS provides a wide range of software development intended to provide real solutions to real-life challenges. The three cutting-edge technological developments that we have incorporated are</p>
+							<ul className="icon-list icon-list-lg bullet-soft-blue">
+								<li><span><CheckCircleFill/></span><span><strong>Internet of Things</strong></span></li>
+								<li><span><CheckCircleFill/></span><span><strong>Artificial Intelligence software</strong></span></li>
+								<li><span><CheckCircleFill/></span><span><strong>Virtual Reality</strong></span></li>
+							</ul>
+							<p>We also provide custom Information web applications, cloud computing, and cybersecurity software solutions. We manage to adapt our technology solutions seamlessly to the project requirements and business needs of our clients.</p>
 						</Col>
-						<Col md={5}>
-							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="100" data-sal-easing="ease"/>
+						<Col md={5} md={{ order: 'first' }}>
+							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>
 					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
 						<Col>
-							<p>AJIS set out to navigate the new challenges with the constant innovation of responsive products, software development and dedicated IT support. It subsequently grew into a technology enabler
-	and task manager for hundreds of organizations and companies worldwide. The company’s product-based model comprises two types.</p>
-							<ul className="icon-list icon-list-lg bullet-soft-blue">
-								<li><span><CheckCircleFill/></span><span>The first is <strong>Artificial Intelligence (AI)–based modeling</strong>, including AI-based video analytics. This additional layer of software supplements the
-	company’s Surveillance Solutions, including automated alerts for home surveillance, accident detection, and safety systems.</span></li>
-								<li><span><CheckCircleFill/></span><span>The second is <strong>Artificial Intelligence (AI)–Internet of Things (IoT)</strong>, which comprises AI-based sensors for GPS tracking.</span></li>
-							</ul>
-							<p>Today and based on its product line, AJIS serves different domains, <em>including citizen safety, solid-waste management, and traffic solutions,</em> etc. AJIS, therefore, deploys solutions across
-	multiple smart cities worldwide. It has built a global brand as the fastest-growing industry provider of technology solutions to real-life challenges. It is a system integrator for ICT and
-	Surveillance Solutions and provides a host of IT &amp; Cloud Advisory Services. AJIS also provides <strong>Application and Infrastructure Managed Support Services, Cloud services &amp; VSaaS (Video
-	software as a service), and Software Development for AI, IoT and VR, and Career tech.</strong></p>
-							<blockquote className="blockquote text-muted">Unique global brand as an industry leader</blockquote>
-							<p>The customer presence of AJIS has since grown and cuts across both the public and private sectors. It includes all mainstream industries, such as Manufacturing, Education, Technology,
-	Healthcare, Defense, Oil and Gas, and Railways. Besides these, AJIS is constantly looking for opportunities to grow and expand its solutions to other industries. Indeed, it has built
-	partnerships with complementary service providers. For example, AJIS is an exclusive partner of Mirasys, a Finland-based company with which it is working for various Made-In-India projects.</p>
-
-							<p>A motivated and professional team of experienced and service-oriented employees runs AJIS, driving its growth as a service-oriented organization. This guarantees AJIS's capacity to continue
-	pioneering technology and managed IT services and solutions to real-life challenges for businesses, organizations, and communities worldwide.</p>
+							<p>AJIS is the world leader in the provision of IoT-enabled services. We can confidently state that AJIS is at the forefront when it comes to data infrastructure, service delivery innovation, and platform for both publically and enterprise-managed solutions. The convergence of networked computing, which is mainly large-scale data management that has real-time machine intelligence drives the integration of both the virtual and physical worlds.</p>
+							<p>We have partnered with leading service providers, governments, carriers, diversified enterprises, and product OEMs to help fully leverage the internet of things, smart connected devices, and machines. Our main strategy is to give a reflection on the importance of the three critical elements. These elements are the delivery of end-to-end managed solutions, large-scale ecosystem collaboration, and a new generation of intelligent real-time machine platforms. These critical elements function together to leverage intelligent sensors, assets, and equipment.</p>
+							<p>At AJIS, we can provide you with intelligence at both the software and hardware levels. Our capabilities circumscribe the transformative and comprehensive nature of the IoT, smart systems, and machine-to-machine. We are not narrowly focused and isolated like our competitors. We can empower a control and connection across the physical and digital barriers. We are also experts in harnessing the potential of IoT via end-to-end advanced platforms and services.</p>
+							<p>AJIS is also in a position to offer you artificial intelligence outsourcing. We can help you sample several public cloud platforms to be able to test the different algorithms of machine learning. You don’t need a large initial investment and the risks involved are relatively low.</p>
+							<p>We offer quite a number of styles of AI and machine learning. We understand that it is important for you, as an organization, to do a proper evaluation of the features and pricing to determine your AI needs and what works for you. We, therefore, provide specialized hardware that is needed to perform some AI tasks such as GPU-based processing for rigorous loads of work.</p>
+							<p>At AJIS, we provide you with a platform where you can try out services and algorithms to enable your organization or business to find out what works best before committing to anything. We are always there to help you make the best decision.</p>
+							<p>AJIS also provides software development for simulated experiences through Virtual Reality. We have developed a standard virtual reality system that uses both multi-projected environments and virtual reality headsets to produce realistic sounds, images, and any other sensation that can simulate the physical presence of a user in the virtual environment.</p>
+							<p>We intend to help you apply virtual reality in businesses through virtual meetings, education through military and medical training, and entertainment through video games. A person who uses virtual reality can look and move around an artificial world, and interact with the virtual items and features. </p>
 						</Col>
 					</Row>
 				</Container>
