@@ -1,7 +1,7 @@
 module.exports = {
 	pathPrefix: `/staticweb/public`,
   siteMetadata: {
-    title: "ajiswebsite",
+    title: "AJIS Solutions",
 		siteUrl: "https://ajissolutions.com"
   },
   plugins: [

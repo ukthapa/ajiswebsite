@@ -54,7 +54,7 @@ $headings-font-family:  $font-family-sans-serif !default;
 	--bs-gradient: linear-gradient(to right, #fab758, #f78b77, #e2626b);
 }
 
-$enable-gradients:            true !default;
+$enable-gradients:  true !default;
 
 $grid-breakpoints: (
   xs: 0,
@@ -191,17 +191,41 @@ blockquote {
 }
 
 .navbar {
-	background: transparent;
-	padding: 0.25rem 1rem !important;
+	padding: .25rem 1rem !important;
 	position: absolute;
 	z-index: 2000;
 	width: 100%;
+	background:rgba(255, 255, 255, 0.95) !important;
+	.navbar-collapse.show {
+		padding-bottom: 1rem;
+	}
 	.nav-item {
 		margin: 0 5px;
+		.dropdown-toggle {
+			font-weight: 700;
+			&:after {
+				border: none !important;
+				width: 8px;
+				height: 8px;
+				background: url(../images/icons/down-arrow.svg) no-repeat center bottom;
+				position: absolute;
+				top: 14px;
+				right: 0px;
+				transform: rotate(-90deg);
+			}
+		}
+
+		&.show {
+			.dropdown-toggle {
+				&:after {
+					transform: rotate(0deg);
+				}
+			}
+		}
 	}
 	&.sticked-menu {
 		position: fixed;
-		background: var(--bs-white);
+		background: var(--bs-white) !important;
 		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
@@ -222,32 +246,78 @@ blockquote {
 	max-width: 200px;
 }
 
+.navbar-nav {
+	.dropdown-menu {
+		border: none;
+		.dropdown-item {
+			white-space: pre-wrap;
+			padding: .35rem 1.5rem;
+			border-left: 2px solid var(--bs-light) !important;
+			&:hover {
+				border-left-color: var(--bs-primary) !important;
+			}
+		}
+	}
+	.btn {
+		margin-top: 15px;
+	}
+}
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
+	border: none !important;
+	outline: 0 !important;
+	box-shadow: none !important;
+	padding: 0.25rem 0 !important;
+}
+
 @include media-breakpoint-up(md) {
+	.navbar {
+		background: transparent !important;
+		.nav-item {
+			.dropdown-toggle {
+				font-weight: 400;
+				&:after {
+					top: 18px !important;
+					right:  -5px !important;
+					transform: rotate(0deg) !important;
+				}
+			}
+		}
+	}
 	.navbar-nav {
 		.dropdown-menu {
 			padding: 30px  !important;
 			border-color: #f9f9f9 !important;
+			border: 1px solid rgba(0, 0, 0, 0.15);
 			&.show {
 				box-shadow: 0 4px 9px 0 rgba(67, 65, 79, .10);
 			}
+			.dropdown-item {
+				white-space: nowrap;
+				padding: 0.25rem 1rem;
+			}
 			a {
 				background: transparent !important;
-				font-weight: 500;
+				font-weight: 400;
 				color: var(--bs-navy);
 				padding: 5px 10px;
 				border-left: 2px solid transparent;
 				&:hover {
-					background: transparent !important;
+					background: var(--bs-light) !important;
 					color: var(--bs-dark);
 					border-left: 2px solid #0e6dc2;
 				}
+
 			}
+		}
+		.btn {
+			margin-top: 0;
 		}
 	}
 }
 
 .banner-wrapper {
-	padding: 10rem 0 4rem;
+	padding: 7rem 0 4rem;
 }
 
 .banner-wrapper-small {
@@ -271,8 +341,16 @@ blockquote {
 }
 
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
+	.banner-wrapper {
+		padding: 10rem 0 4rem;
+	}
 
+	.navbar {
+		.nav-item {
+			margin: 0 10px;
+		}
+	}
 }
 
 
@@ -335,22 +413,37 @@ a.card {
 	a {
 		padding-left: 0;
 		&.nav-link {
-			color: $blue-400;
+			color: var(--bs-light);
+			opacity: .8 !important;
+			&:hover {
+				opacity: 1 !important;
+			}
 		}
 	}
 }
 
-.nav-item {
-	a {
-		color: $blue-400;
-	}
-}
 
 footer {
-	background-color: #f9f9f9;
-	color: $gray-100 !important;
+	color: var(--bs-ash);
+	font-weight: 300;
+	.services, .resources, .company {
+		margin-bottom: 20px;
+	}
+	.services {
+		flex: 0 0 100%;
+	}
 	.resources, .company {
-		flex: 0 1 220px;
+		flex: 1 0;
+	}
+
+	@include media-breakpoint-up(lg) {
+		.resources, .company {
+			flex: 0 1 220px;
+		}
+
+		.services {
+			flex: 1 0;
+		}
 	}
 
 	p{
@@ -358,7 +451,23 @@ footer {
 	}
 
 	h5 {
-		color: $gray-300;
+		color: var(--bs-ash);
+		font-weight: 400;
+		letter-spacing: .05rem;
+	}
+
+	.nav-item {
+		border-left: 1px solid var(--bs-ash);
+		&:first-child {
+			border-left: none;
+		}
+		a {
+			color: var(--bs-light);
+			padding: 0 10px;
+			&:hover, &:visited {
+				color: var(--bs-secondary);
+			}
+		}
 	}
 }
 

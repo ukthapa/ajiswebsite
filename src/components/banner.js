@@ -12,8 +12,8 @@ const Banner = () => {
 					<Row>
 						<Col>
 							<div className="text-center">
-								<h1 className="mb-4 display-2" data-sal="slide-down" data-sal-delay="150" data-sal-easing="ease">Turn your Technological Fantasy <span className="d-lg-block">into a Livable Reality.</span></h1>
-								<p className="m-auto lead text-secondary" data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
+								<h1 className="mb-4 display-2" data-sal="slide-down" data-sal-delay="20" data-sal-easing="ease">Turn your Technological Fantasy <span className="d-lg-block">into a Livable Reality.</span></h1>
+								<p className="m-auto lead text-secondary" data-sal="slide-down" data-sal-delay="50" data-sal-easing="ease">Our Intelligent data systems, Information, and Interactive technology solutions are powering corporations, <span className="d-xl-block">securing communities, and enhancing the quality of life worldwide.</span></p>
 							</div>
 						</Col>
 					</Row>

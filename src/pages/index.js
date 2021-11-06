@@ -30,8 +30,8 @@ const IndexPage = (props) => {
   return (
 		<Layout>
 			<SEO
-			  title="Testing"
-			  description=""
+			  title="Dedication to Innovations"
+			  description="A &amp; J Intelli System (P) Ltd (AJIS) provide dedicated IT support, software development, artificial intelligence (AI), and managed services."
 			/>
 			<Banner />
 			<AboutUs />

@@ -67,15 +67,15 @@ const Footer = () => {
 						<Col>
 						<hr className="mt-4 mb-4"/>
 						<div className="d-md-flex justify-content-center justify-content-md-between align-items-center small text-black-50 text-center text-md-start">
-							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>
-							<Nav className="justify-content-center">
+							<Nav className="justify-content-center pb-2">
 								<Nav.Item>
-									<Nav.Link href="/privacy-policy" className="p-2">Privacy Policy</Nav.Link>
+									<Nav.Link href="/privacy-policy" className="">Privacy Policy</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link href="/terms-of-services" className="p-2">Terms of Services</Nav.Link>
+									<Nav.Link href="/terms-of-services" className="">Terms of Services</Nav.Link>
 								</Nav.Item>
 							</Nav>
+							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>
 						</div>
 
 						</Col>

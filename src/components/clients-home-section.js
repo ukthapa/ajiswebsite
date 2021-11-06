@@ -1,8 +1,8 @@
 import React from "react"
 import aboutImg from "../images/client.jpg"
 import { Container, Row, Col, Image  } from "react-bootstrap"
-import Customerdata from "../data/customer-logo.json"
-import Customers from "../components/customer-logos"
+// import Customerdata from "../data/customer-logo.json"
+// import Customers from "../components/customer-logos"
 
 const ClinetsSection = () => {
 	return (
@@ -18,9 +18,9 @@ const ClinetsSection = () => {
 						<Image src={aboutImg} className="aboutimg img-fluid" data-sal="slide-down" data-sal-delay="150" data-sal-easing="ease"/>
 					</Col>
 				</Row>
-				<Row className="gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 gx-10 gy-4" >
+				{/* <Row className="gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 gx-10 gy-4" >
 					<Customers customerlist = {Customerdata}/>
-				</Row>
+				</Row> */}
 			</Container>
 		</section>
 	)
