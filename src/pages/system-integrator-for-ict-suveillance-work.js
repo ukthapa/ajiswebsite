@@ -27,37 +27,17 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
-					<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6}  data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease">
-							<h2>Who Are We?</h2>
-							<p className="lead">A &amp; J Intelli System (P) Ltd (AJIS) is a technology solution provider that started in 2015. This was around the time when new technologies were emerging, as were new, complex, and dynamic
-	security threats. Customer demands were also changing, and there was a need for dedicated IT support. Indeed, the mismatch between technology, organizational needs, and customer
-	experience threatened the industry then. AJIS aimed to address these evolving needs, offer managed services and generally innovate solutions to real-life challenges.</p>
-						</Col>
-						<Col md={5}>
-							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="100" data-sal-easing="ease"/>
-						</Col>
-					</Row>
+
 					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
 						<Col>
-							<p>AJIS set out to navigate the new challenges with the constant innovation of responsive products, software development and dedicated IT support. It subsequently grew into a technology enabler
-	and task manager for hundreds of organizations and companies worldwide. The company’s product-based model comprises two types.</p>
-							<ul className="icon-list icon-list-lg bullet-soft-blue">
-								<li><span><CheckCircleFill/></span><span>The first is <strong>Artificial Intelligence (AI)–based modeling</strong>, including AI-based video analytics. This additional layer of software supplements the
-	company’s Surveillance Solutions, including automated alerts for home surveillance, accident detection, and safety systems.</span></li>
-								<li><span><CheckCircleFill/></span><span>The second is <strong>Artificial Intelligence (AI)–Internet of Things (IoT)</strong>, which comprises AI-based sensors for GPS tracking.</span></li>
-							</ul>
-							<p>Today and based on its product line, AJIS serves different domains, <em>including citizen safety, solid-waste management, and traffic solutions,</em> etc. AJIS, therefore, deploys solutions across
-	multiple smart cities worldwide. It has built a global brand as the fastest-growing industry provider of technology solutions to real-life challenges. It is a system integrator for ICT and
-	Surveillance Solutions and provides a host of IT &amp; Cloud Advisory Services. AJIS also provides <strong>Application and Infrastructure Managed Support Services, Cloud services &amp; VSaaS (Video
-	software as a service), and Software Development for AI, IoT and VR, and Career tech.</strong></p>
-							<blockquote className="blockquote text-muted">Unique global brand as an industry leader</blockquote>
-							<p>The customer presence of AJIS has since grown and cuts across both the public and private sectors. It includes all mainstream industries, such as Manufacturing, Education, Technology,
-	Healthcare, Defense, Oil and Gas, and Railways. Besides these, AJIS is constantly looking for opportunities to grow and expand its solutions to other industries. Indeed, it has built
-	partnerships with complementary service providers. For example, AJIS is an exclusive partner of Mirasys, a Finland-based company with which it is working for various Made-In-India projects.</p>
-
-							<p>A motivated and professional team of experienced and service-oriented employees runs AJIS, driving its growth as a service-oriented organization. This guarantees AJIS's capacity to continue
-	pioneering technology and managed IT services and solutions to real-life challenges for businesses, organizations, and communities worldwide.</p>
+							<p>We are the most preferred and trusted ICT solution providers since we provide a wide range of quality services when it comes to ICT and surveillance solutions. We value efficiency when handling computer supply services and PC requirements for our customers in all business areas. You will definitely get the best solutions and services by choosing AJIS as your technology solution provider.</p>
+							<p>It is integral to have a network infrastructure that is responsive for your organization when it comes to communicating with employees and clients and sharing information. AJIS is considered the leading distributor of quality networking products. We have a team of engineers who have specialized in specific ICT areas such as Siemens DIL, CCNA, CNE, and Microsoft.</p>
+							<p>We are, therefore, trained and experienced to put in place and support installations such as Ethernet data cabling, WIFI, and fiber optics. We also help in the installation, support, and planning of Windows NT, Novell Netware, CP/IP, Windows for workgroups, and IPX/SPX Connectivity for both WANs & LANs.</p>
+							<p>We are also at your service in case you need us to promote your domain controllers and configure your servers such as domain name server, dynamic host configuration protocol, Exchange Server, remote access server, windows internet name server, Active Directory, and File server. We can also configure or install software on your computers by making use of the Group Policy Monitoring of the traffic which is entering and leaving your perimeter network.</p>
+							<p>If you need to prepare for a disaster recovery process or a backup and restoration process so that your servers can minimize downtime, then we are your to-go ICT solution providers. You may be experiencing challenges in preparing the backup and restoration process, renaming your routers and switch, or configuring the expected proper routing protocol. All you need to do is inform us and all these issues will be sorted out. We are also able to configure DNS and DHCP on the router.</p>
+							<p>At AJIS, we also provide high-quality services and solutions for your security and surveillance. We are capable of supporting multiple functions for several organizations with different kinds of needs. Our team of experts is experienced in handling quite a number of critical areas when providing services. These experiences make us unique and a step further than our competitors. You can also be a part of this special experience by simply requesting our services.</p>
+							<p>Some of the security solution services that we offer include access control systems, clocking systems, smart lock, time attendance systems, video intercom, and video surveillance (CCTV). We are always on the frontline to ensure that all our clients receive high-definition and high-end comprehensive and digital megapixel CCTV solutions. We can, therefore, supply you with thermal cameras, HD IP cameras, intelligent video management systems, spy cameras, Automatic Number Plate Recognition Cameras, and IR bullet cameras.</p>
+							<p>Therefore, AJIS is your solution provider for ICT and Surveillance solutions and addresses the wide range of integration needs within the ICT industry. We install and connect various IT systems, surveillance software, and hardware into one comprehensive, cohesive, and seamlessly functioning body. Our offerings include design, solution integration, systems development, installation, commissioning & Maintenance.</p>
 						</Col>
 					</Row>
 				</Container>
