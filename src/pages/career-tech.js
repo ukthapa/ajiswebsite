@@ -12,9 +12,9 @@ const CareerTech = (props) => {
 		<Layout>
 			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
-					<Row className="pt-md-5 mt-md-5 pb-3 pb-md-5">
+					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-2 mt-md-5 pb-5 mb-5">
+							<div className="pt-lg-5 mt-lg-2 mt-md-5 pb-5 mb-5">
 								<h1 className=" display-2">Career tech</h1>
 								<p className="lead">A &amp; J Intelli System (P) Ltd also provides Educational Institutions with a broad range of products and services, including ready-to-run programs and courses.</p>
 							</div>

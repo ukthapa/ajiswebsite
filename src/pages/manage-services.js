@@ -12,9 +12,9 @@ const AboutPage = (props) => {
 		<Layout>
 			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
-					<Row className="pt-md-5 mt-md-5 pb-3 pb-md-5">
+					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-2 mt-md-5 pb-5 mb-5">
+							<div className="pt-lg-5 mt-lg-2 mt-md-5 pb-5 mb-5">
 								<h1 className=" display-2">Manage Services</h1>
 								<p className="lead">Our Managed Services include Application Managed Service (AMS), Infrastructure Managed Services (IMS), and cloud advisory.</p>
 							</div>
@@ -41,7 +41,7 @@ const AboutPage = (props) => {
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>
-					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+					<Row>
 						<Col>
 							<p>We are able to host and maintain applications with our AMS, deliver technical and end-user support and complement it with the necessary technology infrastructure. We can also provide you with a flexible structure to enable your business or organization to fine-tune our Application Management Services to your business objectives and IT.</p>
 							<p>At AJIS, we provide a full range of services that are known to be industry-leading. Such services include information management, systems integration, and enterprise resource planning. We are always ready to support you when you need to choose an optimum managed service model or transition to a target state successfully.</p>

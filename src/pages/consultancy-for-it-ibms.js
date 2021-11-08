@@ -14,7 +14,7 @@ const AboutPage = (props) => {
 				<Container>
 					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-5 pb-5 mb-2">
+							<div className="pt-lg-5 mt-lg-5 pb-5 mb-2">
 								<h1 className=" display-2">Consultancy for IT &amp; IBMS</h1>
 								<p className="lead">AJIS helps clients to develop cloud computing strategies, including detailed cost and benefit analyses, enterprise-wide cloud adaptation roadmaps, and migration and migration plans.</p>
 							</div>
@@ -27,8 +27,7 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
-
-					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+					<Row >
 						<Col>
 							<p>At AJIS, we understand how important it is for you and your enterprise to make the most use of cloud services and technologies. One of our main objectives is to help you, as an entrepreneur or investor, identify the most suitable opportunities you can leverage the IT and cloud computing services. We always use a modern cloud adaption route or the as-is migration to the cloud in order to help you realize sustainable benefits in your business.</p>
 							<p>Our priority is to help you develop cloud computing strategies. As an entrepreneur, you have to constantly make critical decisions concerning your business operations, financial obligations, security, and technological applications. You need a well-thought-out strategy when making such decisions and that’s where we come in. AJIS will help you develop a uniform cloud adoption strategy that will assess the overall portfolio of your enterprise.</p>

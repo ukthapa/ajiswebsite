@@ -14,7 +14,7 @@ const AboutPage = (props) => {
 				<Container>
 					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-5 pb-5 mb-2">
+							<div className="pt-lg-5 mt-lg-5 pb-5 mb-2">
 								<h1 className=" display-2">System integrator for ICT &amp; Surveillance work</h1>
 								<p className="lead">AJIS is a system integrator for ICT and Surveillance solutions and addresses the wide range of integration needs within the ICT industry.</p>
 							</div>
@@ -27,8 +27,7 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
-
-					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+					<Row >
 						<Col>
 							<p>We are the most preferred and trusted ICT solution providers since we provide a wide range of quality services when it comes to ICT and surveillance solutions. We value efficiency when handling computer supply services and PC requirements for our customers in all business areas. You will definitely get the best solutions and services by choosing AJIS as your technology solution provider.</p>
 							<p>It is integral to have a network infrastructure that is responsive for your organization when it comes to communicating with employees and clients and sharing information. AJIS is considered the leading distributor of quality networking products. We have a team of engineers who have specialized in specific ICT areas such as Siemens DIL, CCNA, CNE, and Microsoft.</p>

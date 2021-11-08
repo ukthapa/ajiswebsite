@@ -12,9 +12,9 @@ const AboutPage = (props) => {
 		<Layout>
 			<section className="banner-wrapper-small bg-gradient-primary angled-inverse section">
 				<Container>
-					<Row className="pt-md-5 mt-md-5 pb-3 pb-md-5">
+					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-2 mt-md-5 pb-5 mb-5">
+							<div className="pt-lg-5 mt-lg-2 mt-md-5 pb-5 mb-5">
 								<h1 className=" display-2">Software development - IT, AI &amp; VR</h1>
 								<p className="lead">Company amied to address the evolving needs, offer managed services and generally innovate solutions to real-life challenges</p>
 							</div>
@@ -28,7 +28,7 @@ const AboutPage = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 					<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6}  data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
+						<Col md={6} >
 							<p className="lead">AJIS provides a wide range of software development intended to provide real solutions to real-life challenges. The three cutting-edge technological developments that we have incorporated are</p>
 							<ul className="icon-list icon-list-lg bullet-soft-blue">
 								<li><span><CheckCircleFill/></span><span><strong>Internet of Things</strong></span></li>
@@ -41,7 +41,7 @@ const AboutPage = (props) => {
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>
-					<Row data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+					<Row >
 						<Col>
 							<p>AJIS is the world leader in the provision of IoT-enabled services. We can confidently state that AJIS is at the forefront when it comes to data infrastructure, service delivery innovation, and platform for both publically and enterprise-managed solutions. The convergence of networked computing, which is mainly large-scale data management that has real-time machine intelligence drives the integration of both the virtual and physical worlds.</p>
 							<p>We have partnered with leading service providers, governments, carriers, diversified enterprises, and product OEMs to help fully leverage the internet of things, smart connected devices, and machines. Our main strategy is to give a reflection on the importance of the three critical elements. These elements are the delivery of end-to-end managed solutions, large-scale ecosystem collaboration, and a new generation of intelligent real-time machine platforms. These critical elements function together to leverage intelligent sensors, assets, and equipment.</p>

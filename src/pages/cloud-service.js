@@ -14,7 +14,7 @@ const AboutPage = (props) => {
 				<Container>
 					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
-							<div className="pt-5 mt-5 pb-5 mb-2">
+							<div className="pt-lg-5 mt-lg-5 pb-5 mb-2">
 								<h1 className=" display-2">Cloud Services &amp; VSaaS</h1>
 								<p className="lead">AJIS offers Video software as a service (VSaaS) and cloud services. Cloud services range from cloud migration, optimization, and discovery to disaster recovery, architecture validation, data analytics, and application development.</p>
 							</div>

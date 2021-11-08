@@ -360,7 +360,7 @@ blockquote {
 }
 
 .angled-inverse {
-	clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px calc(100% - 5vw));
+	clip-path: polygon(0px 0px, 100% 0px, 318% 80%, 0px calc(100% - 5vw));
 }
 
 
@@ -444,6 +444,15 @@ footer {
 		.services {
 			flex: 1 0;
 		}
+
+		.white-bg, .angled {
+			clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
+		}
+
+		.angled-inverse {
+			clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px calc(100% - 5vw));
+		}
+
 	}
 
 	p{
@@ -563,6 +572,8 @@ footer {
 		fill: var(--bs-blue);
 	}
 }
+
+
 
 
 // Helper
