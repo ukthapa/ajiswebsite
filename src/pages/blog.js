@@ -19,16 +19,19 @@ export default function Blog({ data }) {
 					</Row>
 				</Container>
 			</section>
-			<div className="row">
-				{data.allMdx.nodes.map(({ excerpt, frontmatter, slug, timeToRead}) => (
-					<Link to = {`/${slug}`} className="col-4">
-						<h2>{frontmatter.title}</h2><br/>
-						<small>{frontmatter.date}</small><br/>
-						<small>{timeToRead}</small><br/>
-						<p>{excerpt}</p>
-					</Link>
-				))}
-			</div>
+			<Container>
+				<div className="row">
+					{data.allMdx.nodes.map(({ excerpt, frontmatter, slug, timeToRead}) => (
+						<Link to = {`/${slug}`} className="col-4">
+							<h2 className="h5">{frontmatter.title}</h2><br/>
+							<small>{frontmatter.date}</small><br/>
+							<small>{frontmatter.author}</small><br/>
+							<small>Time to read: {timeToRead}</small><br/>
+							<p>{excerpt}</p>
+						</Link>
+					))}
+				</div>
+			</Container>
 		</Layout>
   )
 }

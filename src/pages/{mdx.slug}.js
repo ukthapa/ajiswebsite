@@ -2,12 +2,12 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
 import Layout from "../layout/base"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 
 export default function PostPage({ data }) {
   const {
     body,
-    frontmatter: { title },
+    frontmatter: { title, featured, author, date }
   } = data.mdx;
 
   return (
@@ -18,7 +18,7 @@ export default function PostPage({ data }) {
 					<Row>
 						<Col>
 							<div className="pt-5 mt-5 pb-5 mb-5 text-center">
-								<h1 className="display-2">{title}</h1>
+								<Image src={featured} />
 							</div>
 						</Col>
 					</Row>
@@ -27,6 +27,11 @@ export default function PostPage({ data }) {
 			<Container>
 				<Row>
 					<Col>
+					    <h1 className="display-2">{title}</h1>
+						<div>
+							<h4>{author}</h4>
+							<span>{date}</span>
+						</div>
 						<MDXRenderer>{body}</MDXRenderer>
 					</Col>
 				</Row>

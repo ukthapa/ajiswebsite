@@ -5,6 +5,7 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import aboutImg from "../images/about.jpg"
 import introImg from "../images/concept6.png"
+import techVideo from "../videos/vehicle-detection.mp4"
 
 const AboutPage = (props) => {
 
@@ -27,6 +28,15 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
+					<Row>
+						<Col>
+							<div className="video-wrapper">
+								<video controls>
+									<source src={techVideo} type="video/mp4" />
+								</video>
+							</div>
+						</Col>
+					</Row>
 					<Row>
 						<Col>
 							<p>The main function of a video surveillance system is to control the multiple sources of a facility’s video subsystems in order to manage, collect, and present a video in a concise and clear manner. At AJIS, we offer you a reliable, secure, and innovative solution by offering cloud services and Video Software as a Service (VSaaS). Our main focus is to help you implement a video surveillance solution to ensure inland security.</p>

@@ -354,13 +354,27 @@ blockquote {
 }
 
 
-
 .white-bg, .angled {
 	clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
 }
 
 .angled-inverse {
 	clip-path: polygon(0px 0px, 100% 0px, 318% 80%, 0px calc(100% - 5vw));
+}
+
+
+
+
+
+
+@include media-breakpoint-up(lg) {
+	.white-bg, .angled {
+		clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
+	}
+
+	.angled-inverse {
+		clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px calc(100% - 5vw));
+	}
 }
 
 
@@ -443,14 +457,6 @@ footer {
 
 		.services {
 			flex: 1 0;
-		}
-
-		.white-bg, .angled {
-			clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
-		}
-
-		.angled-inverse {
-			clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px calc(100% - 5vw));
 		}
 
 	}
@@ -592,3 +598,15 @@ footer {
 	}
 }
 
+
+.video-wrapper {
+	padding: 6px;
+	margin: 20px auto;
+	border: 1px solid #f6f6f6;
+	box-shadow: 0 3px 10px #fcfcfc;
+}
+
+.video-wrapper video {
+	width: 100%;
+	height: auto;
+}

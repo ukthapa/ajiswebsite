@@ -1,6 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import Layout from "../layout/base"
+import SEO from "../components/seo"
+
 // styles
 const pageStyles = {
   color: "#232129",
@@ -27,6 +30,11 @@ const codeStyles = {
 // markup
 const NotFoundPage = () => {
   return (
+		<Layout>
+			<SEO
+			  title="Dedication to Innovations"
+			  description="A &amp; J Intelli System (P) Ltd (AJIS) provide dedicated IT support, software development, artificial intelligence (AI), and managed services."
+			/>
     <main style={pageStyles}>
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
@@ -48,6 +56,7 @@ const NotFoundPage = () => {
         <Link to="/">Go home</Link>.
       </p>
     </main>
+		</Layout>
   )
 }
 
