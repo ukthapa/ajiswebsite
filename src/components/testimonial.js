@@ -24,8 +24,14 @@ class TestimonialsSlider extends React.Component {
 		const slidesData = this.props.dataInfo.slides;
 			return (
 				<Container>
+					<Row className="pt-5">
+						<Col className="text-center pt-md-5">
+						<h2 className="h5 text-uppercase text-blue fw-normal">Testimonials</h2>
+						<h3 className="h1">What do our Customers Say about us</h3>
+						</Col>
+					</Row>
 					<Row className="justify-content-center align-items-center py-md-5">
-						<Col className="py-5" md={8}>
+						<Col md={8}>
 							<Swiper
 								spaceBetween={50}
 								slidesPerView={1}
@@ -39,23 +45,23 @@ class TestimonialsSlider extends React.Component {
 								{slidesData.map((item, index) => {
 									return (
 									<SwiperSlide  key={index}>
-										<div>
-											<div className="display-6 text-center">{item.desc}</div>
-
-											<div className="">
-												<Image
-													src= {item.img}
-													className="mx-auto shadow-xl"
-													alt={item.title}
-													style={{
-														maxWidth: "100px",
-														height: "auto",
-														margin: "15px auto",
-													}}
-												/>
-												<div className="text-center">{item.title}</div>
-											</div>
-										</div>
+										<blockquote className="testimonial px-5">
+											<p className="text-center">{item.desc}</p>
+											<cite className="text-center">
+												<div class="img-holder">
+													<Image
+														src= {item.img}
+														className="mx-auto shadow-xl"
+														alt={item.title}
+														style={{
+															maxWidth: "200px",
+															height: "auto",
+														}}
+													/>
+												</div>
+												{/* <div className="text-center">{item.title}</div> */}
+											</cite>
+										</blockquote>
 									</SwiperSlide>
 									)
 								})}

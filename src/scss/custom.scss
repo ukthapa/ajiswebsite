@@ -354,6 +354,50 @@ blockquote {
 }
 
 
+blockquote.testimonial {
+	border-left: 0;
+}
+
+blockquote.testimonial:before {
+	color: #f0e5c2;
+    content: "\201C";
+    font-size: 140px;
+    position: absolute;
+    top: -35px;
+	left: 0;
+    -webkit-text-stroke: 1px #d4b037;
+	font-family: Arial, sans-serif;
+}
+
+blockquote.testimonial p{
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+blockquote cite {
+	font-size: 15px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+blockquote cite .img-holder {
+	margin: 25px auto 0;
+	display: block;
+}
+
+
+
+@include media-breakpoint-up(lg) {
+	blockquote cite {
+		font-size: 20px;
+	}
+
+	blockquote.testimonial p{
+		font-size: 30px;
+	}
+}
+
+
 .white-bg, .angled {
 	clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
 }

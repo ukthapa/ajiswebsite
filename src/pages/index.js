@@ -15,17 +15,17 @@ const IndexPage = (props) => {
 	const swiperData = {
 		slides: [
 			{
-				img : 'chat.png',
+				img : 'customers-logo/logo.png',
 				title : 'Direct contact',
 				desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 			},
 			{
-				img : 'target.png',
+				img : 'customers-logo/logo2.png',
 				title : 'Target',
 				desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
 			},
 			{
-				img : 'customer-service.png',
+				img : 'customers-logo/logo3.png',
 				title : 'Customer service',
 				desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
 			}
