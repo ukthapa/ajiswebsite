@@ -73,15 +73,19 @@ const PrimaryNav = () => {
 						<NavDropdown.Item href="/software-development">Software development - IT, AI &amp; VR</NavDropdown.Item>
 						<NavDropdown.Item href="/career-tech">Career tech</NavDropdown.Item>
 					</NavDropdown>
-					<NavDropdown title="Resouces" id="resources">
+					{/* <NavDropdown title="Resouces" id="resources">
 						<NavDropdown.Item href="/customer-stories">Customers stories</NavDropdown.Item>
 						<NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
-					</NavDropdown>
-					<NavDropdown title="Company" id="company">
+					</NavDropdown> */}
+					{/* <NavDropdown title="Company" id="company">
 						<NavDropdown.Item href="/about-us">About us</NavDropdown.Item>
 						<NavDropdown.Item href="/career">Career</NavDropdown.Item>
 						<NavDropdown.Item href="/contact-us">Contact Us</NavDropdown.Item>
-					</NavDropdown>
+					</NavDropdown> */}
+				</Nav>
+				<Nav>
+					<Nav.Link href="/about-us" className="">About us</Nav.Link>
+					<Nav.Link href="/contact-us" className="">Contact Us</Nav.Link>
 				</Nav>
 				<Nav className="ms-auto">
 					<Nav.Link href="/contact-us" className="btn btn-primary">Get a quote</Nav.Link>

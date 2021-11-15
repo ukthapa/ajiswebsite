@@ -51,7 +51,7 @@ const IndexPage = (props) => {
 			<WhyUs />
 			<Clients />
 			{/* <SimpleSlider dataInfo = {swiperData}/> */}
-			<TestimonialsSlider dataInfo = {swiperData}/>
+			{/* <TestimonialsSlider dataInfo = {swiperData}/> */}
 			<CtaBlock datInfo = {ctaData}/>
 		</Layout>
   )

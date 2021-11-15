@@ -32,7 +32,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</Col>
-						<Col className="resources">
+						{/* <Col className="resources">
 							<h5>Resources</h5>
 							<ul className="footer-link small">
 								<li>
@@ -42,16 +42,16 @@ const Footer = () => {
 									<Nav.Link href="/blog">Blog</Nav.Link>
 								</li>
 							</ul>
-						</Col>
+						</Col> */}
 						<Col className="company">
 							<h5>Company</h5>
 							<ul className="footer-link small">
 								<li>
 									<Nav.Link href="/about-us">About Us</Nav.Link>
 								</li>
-								<li>
+								{/* <li>
 									<Nav.Link href="/career">Career</Nav.Link>
-								</li>
+								</li> */}
 								<li>
 									<Nav.Link href="/contact-us">Contact us</Nav.Link>
 								</li>
@@ -69,10 +69,10 @@ const Footer = () => {
 						<div className="d-md-flex justify-content-center justify-content-md-between align-items-center small text-black-50 text-center text-md-start">
 							<Nav className="justify-content-center pb-2">
 								<Nav.Item>
-									<Nav.Link href="/privacy-policy" className="">Privacy Policy</Nav.Link>
+									{/* <Nav.Link href="/privacy-policy" className="">Privacy Policy</Nav.Link> */}
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link href="/terms-of-services" className="">Terms of Services</Nav.Link>
+									{/* <Nav.Link href="/terms-of-services" className="">Terms of Services</Nav.Link> */}
 								</Nav.Item>
 							</Nav>
 							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>

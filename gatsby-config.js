@@ -66,14 +66,14 @@ module.exports = {
 					exitEventName: 'sal:out', // Exit event name
 			}
 		},
-		{
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: "./src/posts/",
-      },
-      __key: "posts",
-    },
+		// {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "posts",
+    //     path: "./src/posts/",
+    //   },
+    //   __key: "posts",
+    // },
 		`gatsby-transformer-remark`,
     {
       resolve: "gatsby-source-filesystem",
