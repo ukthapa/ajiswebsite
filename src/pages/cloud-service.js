@@ -2,10 +2,9 @@ import * as React from "react"
 
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import { CheckCircleFill } from 'react-bootstrap-icons';
-import aboutImg from "../images/about.jpg"
-import introImg from "../images/concept6.png"
+import introImg from "../images/cloud-services.svg"
 import techVideo from "../videos/vehicle-detection.mp4"
+import techVideoImg from "../images/vehical-identification.png"
 
 const AboutPage = (props) => {
 
@@ -31,7 +30,7 @@ const AboutPage = (props) => {
 					<Row>
 						<Col>
 							<div className="video-wrapper">
-								<video controls>
+								<video controls poster={techVideoImg} >
 									<source src={techVideo} type="video/mp4" />
 								</video>
 							</div>

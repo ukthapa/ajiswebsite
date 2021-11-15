@@ -1,8 +1,8 @@
 import React from "react"
-import imgOne from "../images/sa5.jpeg"
-import imgTwo from "../images/sa6.jpeg"
-import imgThree from "../images/sa7.jpeg"
-import imgFour from "../images/sa8.jpeg"
+import imgOne from "../images/citizen-safety.jpg"
+import imgTwo from "../images/developer.jpg"
+import imgThree from "../images/it-managed-services.jpg"
+import imgFour from "../images/ai-development.jpg"
 import { Container, Row, Col, Image } from "react-bootstrap"
 
 
@@ -23,11 +23,11 @@ const AboutSection = () => {
 						<Row className="align-items-center position-relative">
 							<Col xs={6} className="text-right">
 								<Image src={imgOne} className="aboutimg img-fluid mt-10 rounded shadow-sm"  data-sal="fade-in" data-sal-delay="200" data-sal-easing="ease"/>
-								<Image src={imgTwo} className="aboutimg img-fluid mt-4 rounded shadow-sm float-end" data-sal="fade-in" data-sal-delay="500" data-sal-easing="ease"/>
+								<Image src={imgTwo} className="imgTwo aboutimg img-fluid mt-4 rounded shadow-sm float-end" data-sal="fade-in" data-sal-delay="500" data-sal-easing="ease"/>
 							</Col>
 							<Col xs={6} className="text-left">
 								<Image src={imgThree} className="aboutimg img-fluid rounded shadow-sm" data-sal="fade-in" data-sal-delay="300" data-sal-easing="ease"/>
-								<Image src={imgFour} className="aboutimg img-fluid mt-4 rounded shadow-sm" data-sal="fade-in" data-sal-delay="400" data-sal-easing="ease"/>
+								<Image src={imgFour} className="imgFour aboutimg img-fluid mt-4 rounded shadow-sm" data-sal="fade-in" data-sal-delay="400" data-sal-easing="ease"/>
 							</Col>
 						</Row>
 					</Col>

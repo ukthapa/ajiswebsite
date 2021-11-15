@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
-import introImg from "../images/software-developer.svg"
+import introImg from "../images/software-development.svg"
 import aboutImg from "../images/about.jpg"
 
 const AboutPage = (props) => {

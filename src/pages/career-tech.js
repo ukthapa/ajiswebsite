@@ -4,7 +4,7 @@ import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import aboutImg from "../images/about.jpg"
-import introImg from "../images/career-tech.svg"
+import introImg from "../images/career-tech-img.svg"
 
 const CareerTech = (props) => {
 
