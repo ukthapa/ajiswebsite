@@ -66,10 +66,10 @@ const PrimaryNav = () => {
 				<Navbar.Collapse id="navbarscroll">
 				<Nav className="ms-auto" navbarscroll="true">
 					<NavDropdown title="Services" id="services">
-						<NavDropdown.Item href="/consultancy-for-it-ibms">Consultancy for IT &amp; IBMS</NavDropdown.Item>
-						<NavDropdown.Item href="/system-integrator-for-ict-suveillance-work">System integrator for ICT &amp; Surveillance work</NavDropdown.Item>
+						<NavDropdown.Item href="/it-cloud-services">IT &amp; Cloud Advisory Services</NavDropdown.Item>
+						<NavDropdown.Item href="/ict-surveillance-solutions">ICT &amp; Surveillance work</NavDropdown.Item>
 						<NavDropdown.Item href="/manage-services">Manage services</NavDropdown.Item>
-						<NavDropdown.Item href="/cloud-service">Cloud service</NavDropdown.Item>
+						<NavDropdown.Item href="/cloud-service-vsaas">Cloud Services &amp; VSaaS</NavDropdown.Item>
 						<NavDropdown.Item href="/software-development">Software development - IT, AI &amp; VR</NavDropdown.Item>
 						<NavDropdown.Item href="/career-tech">Career tech</NavDropdown.Item>
 					</NavDropdown>

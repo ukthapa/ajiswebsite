@@ -3,8 +3,6 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import introImg from "../images/cloud-services.svg"
-import techVideo from "../videos/vehicle-detection.mp4"
-import techVideoImg from "../images/vehical-identification.png"
 
 const AboutPage = (props) => {
 
@@ -27,15 +25,6 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
-					<Row>
-						<Col>
-							<div className="video-wrapper">
-								<video controls poster={techVideoImg} >
-									<source src={techVideo} type="video/mp4" />
-								</video>
-							</div>
-						</Col>
-					</Row>
 					<Row>
 						<Col>
 							<p>The main function of a video surveillance system is to control the multiple sources of a facility’s video subsystems in order to manage, collect, and present a video in a concise and clear manner. At AJIS, we offer you a reliable, secure, and innovative solution by offering cloud services and Video Software as a Service (VSaaS). Our main focus is to help you implement a video surveillance solution to ensure inland security.</p>

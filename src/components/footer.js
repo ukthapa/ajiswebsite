@@ -13,16 +13,16 @@ const Footer = () => {
 							<h5>Services</h5>
 							<ul className="footer-link small">
 								<li>
-									<Nav.Link href="/consultancy-for-it-ibms">Consultancy for IT &amp; IBMS</Nav.Link>
+									<Nav.Link href="/it-cloud-services">IT &amp; Cloud Advisory Services</Nav.Link>
 								</li>
 								<li>
-									<Nav.Link href="/system-integrator-for-ict-suveillance-work">System integrator for ICT &amp; Surveillance work</Nav.Link>
+									<Nav.Link href="/ict-surveillance-solutions">ICT &amp; Surveillance work</Nav.Link>
 								</li>
 								<li>
 									<Nav.Link href="/manage-services">Manage services</Nav.Link>
 								</li>
 								<li>
-									<Nav.Link href="/cloud-service">Cloud service</Nav.Link>
+									<Nav.Link href="/cloud-service-vsaas">Cloud Services &amp; VSaaS</Nav.Link>
 								</li>
 								<li>
 									<Nav.Link href="/software-development">Software development - IT, AI &amp; VR</Nav.Link>

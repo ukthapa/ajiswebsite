@@ -7,7 +7,7 @@ import AboutUs from "../components/about-home-section"
 import Services from "../components/services-home-section"
 import WhyUs from "../components/whyus-home-section"
 import Clients from "../components/clients-home-section"
-import TestimonialsSlider from "../components/testimonial"
+// import TestimonialsSlider from "../components/testimonial"
 import CtaBlock from "../components/cta-block"
 // import SimpleSlider from "../components/simple-swiper-slider"
 // markup
@@ -37,7 +37,7 @@ const IndexPage = (props) => {
 		title : 'Ready to get started?',
 		desc : 'If you are evaluating the need for your company before moving its infrastructure to Cloud or transitioning to the Cloud as part of business` growth master plan, we can help.',
 		ctaLabel: 'Schedule a Call',
-		ctaLink: '/'
+		ctaLink: '/contact-us/'
 	}
   return (
 		<Layout>
@@ -52,7 +52,7 @@ const IndexPage = (props) => {
 			<Clients />
 			{/* <SimpleSlider dataInfo = {swiperData}/> */}
 			{/* <TestimonialsSlider dataInfo = {swiperData}/> */}
-			<CtaBlock datInfo = {ctaData}/>
+			<CtaBlock ctaInfo = {ctaData}/>
 		</Layout>
   )
 }

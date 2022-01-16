@@ -3,6 +3,9 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import introImg from "../images/surveillance-lg.svg"
+import techVideo from "../videos/vehicle-detection.mp4"
+import techVideoImg from "../images/vehical-identification.png"
+
 
 const AboutPage = (props) => {
 
@@ -25,6 +28,15 @@ const AboutPage = (props) => {
 			</section>
 			<section className="wrapper mb-5 mt-0">
 				<Container>
+					<Row className="justify-content-center">
+						<Col lg={8}>
+							<div className="video-wrapper">
+								<video controls poster={techVideoImg} >
+									<source src={techVideo} type="video/mp4" />
+								</video>
+							</div>
+						</Col>
+					</Row>
 					<Row >
 						<Col>
 							<p>We are the most preferred and trusted ICT solution providers since we provide a wide range of quality services when it comes to ICT and surveillance solutions. We value efficiency when handling computer supply services and PC requirements for our customers in all business areas. You will definitely get the best solutions and services by choosing AJIS as your technology solution provider.</p>

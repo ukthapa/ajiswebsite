@@ -17,7 +17,7 @@ const ServicesSection = () => {
 				</Row>
 				<Row className="row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 					<Col>
-						<Link to="/consultancy-for-it-ibms"   className="card h-100 shadow-sm p-0" >
+						<Link to="/it-cloud-services"   className="card h-100 shadow-sm p-0" >
 							<div className="card-header p-0 mb-0">
 								<Image src="cloud-services-mb.svg" alt="" className="img-fluid pb-4" />
 							</div>
@@ -28,12 +28,12 @@ const ServicesSection = () => {
 						</Link>
 					</Col>
 					<Col>
-						<Link  to="/system-integrator-for-ict-suveillance-work" className="card h-100 shadow-sm p-0" >
+						<Link  to="/ict-surveillance-solutions" className="card h-100 shadow-sm p-0" >
 							<div className="card-header p-0 mb-0">
 								<Image src="surveillance-mobile.svg" alt="" className="img-fluid pb-4" />
 							</div>
 							<div className="card-body text-center p-4 pb-0">
-							<h4 className="h5 mb-4 "> System Integrator for ICT &amp; <span className="d-md-block">Surveillance Solutions</span> </h4>
+							<h4 className="h5 mb-4 "> ICT &amp; <span className="d-md-block">Surveillance Solutions</span> </h4>
 								<p>AJIS is a system integrator for ICT and Surveillance solutions and addresses the wide range of integration needs within the ICT industry. We install and connect various IT systems, software, and hardware into one comprehensive, cohesive, and seamlessly functioning body. Our offerings include design, solution integration, systems development, etc.</p>
 							</div>
 						</Link>
@@ -50,13 +50,13 @@ const ServicesSection = () => {
 						</Link>
 					</Col>
 					<Col>
-						<Link to="/cloud-service" className="card h-100 shadow-sm p-0" >
+						<Link to="/cloud-service-vsaas" className="card h-100 shadow-sm p-0" >
 							<div className="card-header p-0 mb-0">
 								<Image src="vsaas.svg" alt="" className="img-fluid pb-4" />
 							</div>
 							<div className="card-body text-center p-4 pb-0">
-								<h4 className="h5 mb-4">Video Software as <span className="d-md-block">a Service (Vsaas)</span></h4>
-								<p>AJIS offers Video software as a service (VSaaS) and cloud services. Cloud services range from cloud migration, optimization, and discovery to disaster recovery, architecture validation, data analytics, and application development. We personalize these in our data center but still exploit the flexibility and modularity advantages that new technologies offer in virtualizing and managing data. We help you transition from an on-premise to a cloud-first strategy without compromising performance and reliability.</p>
+								<h4 className="h5 mb-4">Cloud Services &amp; VSaaS</h4>
+								<p>AJIS offers Video software as a service (VSaaS) and cloud services. Cloud services range from cloud migration, optimization, and discovery to disaster recovery, architecture validation, data analytics, and application development.</p>
 							</div>
 						</Link>
 					</Col>

@@ -13,7 +13,7 @@ const AboutPage = (props) => {
 					<Row className="pt-5 mt-5 pb-5">
 						<Col md={6}>
 							<div className="pt-lg-5 mt-lg-5 pb-5 mb-2">
-								<h1 className=" display-2">Consultancy for IT &amp; IBMS</h1>
+								<h1 className=" display-2">IT &amp; Cloud Advisory Services</h1>
 								<p className="lead">AJIS helps clients to develop cloud computing strategies, including detailed cost and benefit analyses, enterprise-wide cloud adaptation roadmaps, and migration and migration plans.</p>
 							</div>
 						</Col>

@@ -16,7 +16,7 @@ const AboutPage = (props) => {
 						<Col md={6}>
 							<div className="pt-5 mt-2 mt-md-5 pb-5 mb-5">
 								<h1 className=" display-2">About Us</h1>
-								<p className="lead">Company amied to address the evolving needs, offer managed services and generally innovate solutions to real-life challenges</p>
+								<p className="lead">Company aimed to address the evolving needs, offer managed services and generally innovate solutions to real-life challenges</p>
 							</div>
 						</Col>
 						<Col md={6}>
@@ -38,7 +38,7 @@ const AboutPage = (props) => {
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>
-					<Row data-sal="slide-up" data-sal-delay="10" data-sal-easing="ease">
+					<Row >
 						<Col>
 							<p>AJIS set out to navigate the new challenges with the constant innovation of responsive products, software development and dedicated IT support. It subsequently grew into a technology enabler
 	and task manager for hundreds of organizations and companies worldwide. The company’s product-based model comprises two types.</p>
