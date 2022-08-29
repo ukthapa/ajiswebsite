@@ -1,0 +1,15 @@
+{
+	"title": "Mentors",
+	"teamMembers":[
+		{
+			"name": "Jukka Rivveri",
+			"photo": "team/jukka.png",
+			"extra-image": ""
+		},
+		{
+			"name": "Rajesh Lal",
+			"photo": "team/rajesh.png",
+			"extra-image": "team/rajesh.png"
+		}
+	]
+}

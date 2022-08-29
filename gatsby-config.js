@@ -2,7 +2,7 @@ module.exports = {
 	pathPrefix: `/staticweb/public`,
   siteMetadata: {
     title: "AJIS Solutions",
-		siteUrl: "https://ajissolutions.com"
+		siteUrl: "http://ajissolutions.com"
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -80,6 +80,13 @@ module.exports = {
       options: {
         path: "./src/data/",
       },
+    },
+		{
+				resolve: `gatsby-plugin-tawk.to`,
+				options: {
+					tawkId: "623e83152abe5b455fc1b521",
+					tawkKey: "1fv2303n5",
+				},
     }
   ],
 };

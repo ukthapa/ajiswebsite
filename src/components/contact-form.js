@@ -3,9 +3,9 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Row, Col, Form, label,  } from "react-bootstrap"
 
 const ContactForm = () => {
-	const [state, handleSubmit] = useForm("meqvvqyg");
+	const [state, handleSubmit] = useForm("xlezpzwv");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return "<h2 className='ic-f-head-2'>Thank You!</h2> <p className='mt-3'>One of us will get in touch with you shortly.</p>";
   }
   return (
       <form onSubmit={handleSubmit}>
@@ -87,6 +87,11 @@ const ContactForm = () => {
 					field="message"
 					errors={state.errors}
 				/>
+			</Col>
+		</Row>
+		<Row>
+			<Col>
+				<div className="g-recaptcha" data-sitekey="6Lduz4EfAAAAALd0_TzOawf7VPi3Ioq0GlnvChEJ"></div>
 			</Col>
 		</Row>
 		<Row>

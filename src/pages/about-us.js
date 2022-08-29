@@ -5,6 +5,9 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import introImg from "../images/about-us.svg"
 import aboutImg from "../images/about.jpg"
+import teamJSON from "../data/team.json"
+import mentorsJSON from "../data/mentors.json"
+import Card from 'react-bootstrap/Card'
 
 const AboutPage = (props) => {
 
@@ -20,7 +23,7 @@ const AboutPage = (props) => {
 							</div>
 						</Col>
 						<Col md={6}>
-							<Image src={introImg} className="img-fluid"/>
+
 						</Col>
 					</Row>
 				</Container>
@@ -59,6 +62,60 @@ const AboutPage = (props) => {
 							<p>A motivated and professional team of experienced and service-oriented employees runs AJIS, driving its growth as a service-oriented organization. This guarantees AJIS's capacity to continue
 	pioneering technology and managed IT services and solutions to real-life challenges for businesses, organizations, and communities worldwide.</p>
 						</Col>
+					</Row>
+
+				</Container>
+			</section>
+			<section className="wrapper mb-5 mt-0">
+				<Container>
+					<Row>
+						<Col><h2>Our Team</h2></Col>
+					</Row>
+					<Row>
+						<Col >
+							<h3  className="my-3">{teamJSON.title}</h3>
+						</Col>
+					</Row>
+					<Row  className="mb-5">
+						{teamJSON.teamMembers.map((data, index) => {
+							return (
+								<Col md={4} key={`content_item_${index}`}>
+									<Card className="h-100">
+										if(data.photo){
+											<Card.Header>
+											<img src="../images/{data.photo}" alt="{data.name}" />
+											</Card.Header>
+										}
+										<Card.Body>
+											<h5>{data.name}</h5>
+											<p>{data.designation}</p>
+										</Card.Body>
+									</Card>
+								</Col>
+							)
+						})}
+					</Row>
+					<Row>
+						<Col>
+						<h3  className="my-3">{mentorsJSON.title}</h3>
+						</Col>
+					</Row>
+					<Row>
+						{mentorsJSON.teamMembers.map((data, index) => {
+							return (
+								<Col md={4} key={`content_item_${index}`}>
+									<Card>
+										<Card.Header>
+											<img src="../images/{data.photo}" alt="{data.name}" />
+										</Card.Header>
+										<Card.Body>
+											<h5>{data.name}</h5>
+											<p>{data.designation}</p>
+										</Card.Body>
+									</Card>
+								</Col>
+							)
+						})}
 					</Row>
 				</Container>
 			</section>

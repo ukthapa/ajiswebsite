@@ -3,8 +3,9 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
-import aboutImg from "../images/about.jpg"
+import aboutImg from "../images/traning-skill.svg"
 import introImg from "../images/career-tech-img.svg"
+import mazhr from "../images/mazhr-logo.svg"
 
 const CareerTech = (props) => {
 
@@ -20,7 +21,7 @@ const CareerTech = (props) => {
 							</div>
 						</Col>
 						<Col md={6}>
-							<Image src={introImg} className="img-fluid"/>
+							<a href="https://mazhr.com/" target="_blank"><Image src={introImg} className="img-fluid"/></a>
 						</Col>
 					</Row>
 				</Container>
@@ -28,15 +29,18 @@ const CareerTech = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 					<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6}  data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
+						<Col md={{ span: 6, offset: 1, order: 1 }}  data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
 							<p className="lead">AJIS is considered the best when it comes to career tech. Some of the career-tech services available at AJIS include</p>
 							<ul className="icon-list icon-list-lg bullet-soft-blue">
 								<li><span><CheckCircleFill/></span><span><strong>E-learning</strong></span></li>
 								<li><span><CheckCircleFill/></span><span><strong>Self-development programs</strong></span></li>
 								<li><span><CheckCircleFill/></span><span><strong>Psychometric tests</strong> such as motivation questionnaires, ability assessments, personality profiles, and reasoning tests</span></li>
 							</ul>
+							<h4>Partner:</h4>
+							<Image src={mazhr} alt="mazhr"/>
+
 						</Col>
-						<Col md={5} md={{ order: 'first' }}>
+						<Col md={5} >
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>

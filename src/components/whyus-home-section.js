@@ -1,5 +1,5 @@
 import React from "react"
-import aboutImg from "../images/about.jpg"
+import aboutImg from "../images/cycle.svg"
 import { Container, Row, Col, Image } from "react-bootstrap"
 
 

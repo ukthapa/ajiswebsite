@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
-import aboutImg from "../images/about.jpg"
+import aboutImg from "../images/managed-services.png"
 import introImg from "../images/managed-services-lg.svg"
 
 const AboutPage = (props) => {
@@ -28,7 +28,7 @@ const AboutPage = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 				<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6}  data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
+					<Col md={{ span: 6, offset: 1, order: 1 }}   data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
 							<p className="lead">The Managed Services offered at AJIS include</p>
 							<ul className="icon-list icon-list-lg bullet-soft-blue">
 								<li><span><CheckCircleFill/></span><span><strong>Infrastructure Managed Services (IMS)</strong></span></li>
@@ -37,7 +37,7 @@ const AboutPage = (props) => {
 							</ul>
 							<p>Currently, the information technology landscape has become more complex and the cost of maintaining it continues to rise. Our specialists are always ready to assist companies to overcome such challenges to enable them to improve the performance of applications and boost the performance of their businesses.</p>
 						</Col>
-						<Col md={5} md={{ order: 'first' }}>
+						<Col md={5} >
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>

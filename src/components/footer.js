@@ -75,7 +75,7 @@ const Footer = () => {
 									{/* <Nav.Link href="/terms-of-services" className="">Terms of Services</Nav.Link> */}
 								</Nav.Item>
 							</Nav>
-							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2021, A &amp; J Intelli System (P) Ltd</p>
+							<p className="mb-0 mr-md-3 text-center text-md-start">&copy; 2022, A &amp; J Intelli System (P) Ltd</p>
 						</div>
 
 						</Col>

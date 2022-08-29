@@ -4,7 +4,7 @@ import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import introImg from "../images/software-development.svg"
-import aboutImg from "../images/about.jpg"
+import aboutImg from "../images/ai-vr-illustration.svg"
 
 const AboutPage = (props) => {
 
@@ -19,7 +19,7 @@ const AboutPage = (props) => {
 								<p className="lead">Company amied to address the evolving needs, offer managed services and generally innovate solutions to real-life challenges</p>
 							</div>
 						</Col>
-						<Col md={6}>
+						<Col md={6} >
 							<Image src={introImg} className="img-fluid"/>
 						</Col>
 					</Row>
@@ -28,7 +28,7 @@ const AboutPage = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 					<Row className="mb-5 justify-content-md-between align-items-center">
-						<Col md={6} >
+						<Col md={{ span: 5, offset: 1, order: 1 }}   data-sal="slide-down" data-sal-delay="10" data-sal-easing="ease">
 							<p className="lead">AJIS provides a wide range of software development intended to provide real solutions to real-life challenges. The three cutting-edge technological developments that we have incorporated are</p>
 							<ul className="icon-list icon-list-lg bullet-soft-blue">
 								<li><span><CheckCircleFill/></span><span><strong>Internet of Things</strong></span></li>
@@ -37,7 +37,7 @@ const AboutPage = (props) => {
 							</ul>
 							<p>We also provide custom Information web applications, cloud computing, and cybersecurity software solutions. We manage to adapt our technology solutions seamlessly to the project requirements and business needs of our clients.</p>
 						</Col>
-						<Col md={5} md={{ order: 'first' }}>
+						<Col md={6} >
 							<Image src={aboutImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>

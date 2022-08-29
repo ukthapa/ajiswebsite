@@ -1,0 +1,20 @@
+{
+	"title": "Team",
+	"teamMembers": [
+	{
+		"name": "Arindam Das Sarkar",
+        "photo": "team/arindam.png",
+		"designation": "Founder, Sales Director & Socioprenuer"
+	},
+	{
+        "name": "Vinti",
+        "photo": "team/vinti.png",
+        "designation": "Hea of Marketing, Operations, People Management"
+	},
+	{
+		"name": "Sandeep Singh",
+        "photo": "team/sandeep.png",
+        "designation": "Sales Head"
+	}
+]
+}

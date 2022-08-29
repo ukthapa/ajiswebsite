@@ -30,7 +30,7 @@ const ContactPage = (props) => {
 						<Col lg={10} data-sal="slide-up" data-sal-delay="10" data-sal-easing="ease">
 							<Row className="justify-content-md-between align-items-md-center shadow rounded-2 py-3 px-2">
 								<Col md={6}>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.098834854936!2d77.04166351507843!3d28.44643688249161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1842a5696379%3A0xc997ea64a2acb50a!2s56%2C%20Institutional%20Area%2C%20Prem%20Puri%2C%20Sector%2032%2C%20Gurugram%2C%20Haryana%20122018!5e0!3m2!1sen!2sin!4v1630233345456!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy"></iframe>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4898.274532464142!2d77.06746408535007!3d28.452482087714486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f01fa2c20b050ec!2sIndo%20Asia%20Tours%20-%20A%20leading%20Destination%20Management%20Company%20of%20India!5e0!3m2!1sen!2sin!4v1650304517496!5m2!1sen!2sin" width="100%" height="450"  loading="lazy"></iframe>
 								</Col>
 								<Col md={5}>
 									<div className="d-flex mb-4">
@@ -38,10 +38,8 @@ const ContactPage = (props) => {
 										<div>
 											<h4>Address</h4>
 											<address>
-												Cabin No. 301,302 &amp; 303, 3rd Floor, <br/>
-												Indo Asia House, 56,<br/>
-												Institutional Area, Sector-44<br/>
-												HR 122002, India
+												Indo Asia House, Sector-44<br/>
+												Gurgaon, HR 122001, India
 											</address>
 										</div>
 									</div>
@@ -50,8 +48,7 @@ const ContactPage = (props) => {
 										<span className="d-block icon-lg mr-4"><Telephone/></span>
 										<div>
 											<h4>Phone</h4>
-											<a href="tel:919999999999">+91 99999 99999</a><br/>
-											<a href="tel:919999999999">+91 99999 99999</a>
+											<a href="tel:9101244001872">+91-01-244001872</a>
 										</div>
 									</div>
 
@@ -59,7 +56,7 @@ const ContactPage = (props) => {
 										<span className="d-block icon-lg mr-4"><Envelope/></span>
 										<div>
 											<h4>Email</h4>
-											<a href="mailto:info.ajis@gmail.com">info.ajis@gmail.com</a>
+											<a href="mailto:info.ajis@gmail.com">info@ajissolutions.com</a>
 										</div>
 									</div>
 								</Col>
