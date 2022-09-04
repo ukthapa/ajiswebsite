@@ -8,6 +8,7 @@ import aboutImg from "../images/about.jpg"
 import teamJSON from "../data/team.json"
 import mentorsJSON from "../data/mentors.json"
 import Card from 'react-bootstrap/Card'
+import ImageJson from  "../components/image"
 
 const AboutPage = (props) => {
 
@@ -23,7 +24,7 @@ const AboutPage = (props) => {
 							</div>
 						</Col>
 						<Col md={6}>
-
+						   <Image src={introImg} className="aboutimg img-fluid rounded" data-sal="fade-in" data-sal-delay="10" data-sal-easing="ease"/>
 						</Col>
 					</Row>
 				</Container>
@@ -69,25 +70,23 @@ const AboutPage = (props) => {
 			<section className="wrapper mb-5 mt-0">
 				<Container>
 					<Row>
-						<Col><h2>Our Team</h2></Col>
+						<Col>
+						<h2>Our Team</h2>
+						</Col>
 					</Row>
 					<Row>
-						<Col >
-							<h3  className="my-3">{teamJSON.title}</h3>
+						<Col>
+							<h3  className="my-4">{teamJSON.title}:</h3>
 						</Col>
 					</Row>
 					<Row  className="mb-5">
 						{teamJSON.teamMembers.map((data, index) => {
 							return (
-								<Col md={4} key={`content_item_${index}`}>
-									<Card className="h-100">
-										if(data.photo){
-											<Card.Header>
-											<img src="../images/{data.photo}" alt="{data.name}" />
-											</Card.Header>
-										}
+								<Col md={4} key={`content_item_${index}`} className="mb-3">
+									<Card className="h-100 text-center">
 										<Card.Body>
-											<h5>{data.name}</h5>
+										    <ImageJson  src={data.photo} alt={data.name} />
+											<h5 className="mt-3">{data.name}</h5>
 											<p>{data.designation}</p>
 										</Card.Body>
 									</Card>
@@ -97,19 +96,17 @@ const AboutPage = (props) => {
 					</Row>
 					<Row>
 						<Col>
-						<h3  className="my-3">{mentorsJSON.title}</h3>
+						<h3  className="my-4">{mentorsJSON.title}:</h3>
 						</Col>
 					</Row>
-					<Row>
-						{mentorsJSON.teamMembers.map((data, index) => {
+					<Row className="pb-5">
+						{mentorsJSON.mentorMembers.map((data, index) => {
 							return (
-								<Col md={4} key={`content_item_${index}`}>
-									<Card>
-										<Card.Header>
-											<img src="../images/{data.photo}" alt="{data.name}" />
-										</Card.Header>
+								<Col md={4} key={`content_item_${index}`} className="mb-3">
+									<Card className="h-100 text-center">
 										<Card.Body>
-											<h5>{data.name}</h5>
+										    <ImageJson  src={data.photo} alt={data.name} />
+											<h5 className="mt-3">{data.name}</h5>
 											<p>{data.designation}</p>
 										</Card.Body>
 									</Card>
@@ -123,5 +120,7 @@ const AboutPage = (props) => {
   )
 }
 
+
 export default AboutPage
+
 

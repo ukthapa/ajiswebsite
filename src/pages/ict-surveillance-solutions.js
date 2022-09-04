@@ -4,6 +4,7 @@ import Layout from "../layout/base"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import introImg from "../images/surveillance-lg.svg"
 import techVideo from "../videos/vehicle-detection.mp4"
+import techVideoWebm from "../videos/vehicle-detection.webm"
 import techVideoImg from "../images/vehical-identification.png"
 
 
@@ -31,8 +32,10 @@ const AboutPage = (props) => {
 					<Row className="justify-content-center">
 						<Col lg={8}>
 							<div className="video-wrapper">
-								<video controls poster={techVideoImg} >
+								<video controls preload="yes" autoplay loop playsinline poster={techVideoImg} >
+									<source src={techVideoWebm} type="video/webm" />
 									<source src={techVideo} type="video/mp4" />
+									<p>Your browser doesn't support HTML video.</p>
 								</video>
 							</div>
 						</Col>
